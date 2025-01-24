@@ -485,6 +485,8 @@
         const victoryContainer = document.getElementById("victory-container"); // Contêiner de vitória
         const victoryImage = document.getElementById("victory-image"); // Imagem de vitória
         const lossContainer = document.getElementById("loss-container"); // Contêiner de derrota
+        const door = document.getElementById("door-image-desktop"); // Contêiner de derrota
+        
 
         function loadQuestion() {
             const currentQuestion = quizData[currentQuestionIndex];
@@ -538,6 +540,7 @@
                     questionEl.style.display = "none";
                     optionsEl.style.setProperty("display", "none", "important");
                     doorImageEl.style.display = "none";
+                    door.style.setProperty("display", "none", "important");
                     victoryContainer.style.display = "block";
                 }, 1000);
             }
@@ -546,7 +549,8 @@
                 setTimeout(() => {
                     questionEl.style.display = "none";
                     optionsEl.style.setProperty("display", "none", "important");
-                    doorImageEl.style.display = "none";
+                    doorImageEl.style.setProperty("display", "none", "important");
+                    door.style.setProperty("display", "none", "important");
                     lossContainer.style.display = "block";
                 }, 1000);
             }
