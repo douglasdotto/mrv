@@ -173,7 +173,7 @@
 
 
 
-    <div class="container ">
+    <div class="container col-12 col-md-10">
         <!-- Título e Descrição -->
         <div class="row justify-content-center align-items-center mt-2">
             <div class="col-12 d-flex justify-content-center align-items-center">
@@ -188,12 +188,14 @@
             </div>
         </div>
 
-        <div id="quiz-container" class="row justify-content-center align-items-center mt-4 position-relative">
-            <div class="col-12 col-md-10 col-lg-9 d-flex justify-content-center align-items-center position-relative">
+        <div id="quiz-container" class="row justify-content-center align-items-center mt-4 position-relative mt-5">
+            <div
+                class="col-12 col-md-10 col-lg-9 d-flex justify-content-center align-items-center position-relative mb-2">
                 <!-- Imagem de Fundo (porta) -->
                 <img id="door-image" src="images/Porta.png" alt="Imagem Porta" class="img-fluid d-md-none">
-                <img id="door-image-desktop" src="images/Porta.png" alt="Imagem Porta para Desktop" class="d-none d-md-block">
-                
+                <img id="door-image-desktop" src="images/Porta.png" alt="Imagem Porta para Desktop"
+                    class="d-none d-md-block">
+
 
                 <!-- Quiz Overlay -->
                 <div class="quiz-overlay">
@@ -212,10 +214,11 @@
             </div>
         </div>
 
-        <div id="victory-container" class="row justify-content-center align-items-center position-relative"
+        <div id="victory-container"
+            class="row justify-content-center align-items-center position-relative col-12 col-md-10 col-lg-10"
             style="display: none;">
             <div
-                class="col-12 col-md-10 col-lg-8 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center">
+                class="col-12 col-md-10 col-lg-10 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center">
                 <!-- Div contendo as imagens -->
                 <div class="col-2 d-none d-md-block"></div> <!-- Espaço lateral em telas maiores -->
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100">
@@ -290,6 +293,28 @@
 
     </div>
 
+    <div class="position-relative">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="images/jogue.png" alt="Jogo" class="me-2" style="">
+                </div>
+
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <p class="resistente col-md-8">Mostre o quão resistente você é na conquista do apê próprio!</p>
+                    <button class="button-custom-resistente mt-3 text-white">COMEÇAR!</button>
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+    </div>
+
+
     <div class="position-relative" id="video-item">
         <div class="container py-5">
             <div class="row justify-content-center align-items-center mt-2" style="position: relative; z-index: 1;">
@@ -302,7 +327,7 @@
                     </div>
 
                     <!-- Texto abaixo do título -->
-                    <div class="col-6 d-flex justify-content-center align-items-center mt-2">
+                    <div class="col-6 col-md-8 d-flex justify-content-center align-items-center mt-2">
                         <p class="react-description text-center">
                             A MRV convidou o Talento XX para assistir e comentar os momentos importantes que rolaram
                             dentro do Apê do Líder MRV. <strong>Dá o play!</strong>
@@ -486,7 +511,7 @@
         const victoryImage = document.getElementById("victory-image"); // Imagem de vitória
         const lossContainer = document.getElementById("loss-container"); // Contêiner de derrota
         const door = document.getElementById("door-image-desktop"); // Contêiner de derrota
-        
+
 
         function loadQuestion() {
             const currentQuestion = quizData[currentQuestionIndex];
@@ -561,20 +586,20 @@
         function updateDoorImage() {
             if (correctAnswersCount === 1) {
                 doorImageEl.src = "images/acertou1.png";
+                door.src = "images/acertou1.png";
             } else if (correctAnswersCount === 2) {
                 doorImageEl.src = "images/acertou2.png";
+                door.src = "images/acertou2.png";
             } else if (correctAnswersCount === 3) {
                 doorImageEl.src = "images/acertou3.png";
+                door.src = "images/acertou3.png";
             } else if (correctAnswersCount === 4) {
                 doorImageEl.src = "images/acertou4.png";
+                door.src = "images/acertou4.png";
             } else if (correctAnswersCount === 5) {
                 doorImageEl.src = "images/acertou5.png";
+                door.src = "images/acertou5.png";
             }
-        }
-
-        function finishQuiz() {
-            questionEl.innerHTML = `<p><strong>Parabéns!</strong> Você completou o quiz!</p>`;
-            optionsEl.innerHTML = "";
         }
 
         loadQuestion();
