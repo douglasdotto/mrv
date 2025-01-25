@@ -284,7 +284,7 @@ footer .btn:hover {
 
 /* Descrição */
 .react-description {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.6;
     color: #FFFFFF;
     max-width: 800px;
@@ -450,7 +450,7 @@ footer .btn:hover {
 .quiz-overlay {
     position: absolute;
     top: 33%;
-    left: 27%;
+    left: 36%;
     transform: translate(-50%, -50%);
     width: 80%;
     border-radius: 10px;
@@ -471,7 +471,6 @@ footer .btn:hover {
 .quiz-options {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 15px;
 }
 
@@ -498,7 +497,7 @@ footer .btn:hover {
 .message-container {
     position: absolute;
     top: 45%;
-    left: 43%;
+    left: 36%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
@@ -511,7 +510,7 @@ footer .btn:hover {
 }
 
 .message-text h3 {
-    font-size: 28px;
+    font-size: 23px;
     font-weight: bold;
     margin-bottom: 10px;
     color: #f8f9fa;

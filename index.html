@@ -200,25 +200,22 @@
                 <!-- Quiz Overlay -->
                 <div class="quiz-overlay">
                     <!-- Pergunta -->
-                    <div id="quiz-question" class="quiz-question text-wrap text-break mx-auto p-3"
-                        style="max-width: 600px;">
+                    <div id="quiz-question" class="quiz-question text-wrap text-break mx-auto p-3">
                         <!-- A pergunta será carregada aqui -->
                     </div>
 
                     <!-- Opções -->
-                    <div id="quiz-options" class="quiz-options d-flex flex-column align-items-start ms-5 mb-5"
-                        style="max-width: 600px;">
+                    <div id="quiz-options" class="quiz-options d-flex flex-column align-items-start ms-4 mb-5">
                         <!-- As opções serão carregadas aqui -->
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="victory-container"
-            class="row justify-content-center align-items-center position-relative col-12 col-md-10 col-lg-10"
+        <div id="victory-container" class="row justify-content-center align-items-center position-relative col-md-12"
             style="display: none;">
             <div
-                class="col-12 col-md-10 col-lg-10 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center">
+                class="col-12 col-md-10 col-lg-12 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center">
                 <!-- Div contendo as imagens -->
                 <div class="col-2 d-none d-md-block"></div> <!-- Espaço lateral em telas maiores -->
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100">
@@ -237,7 +234,7 @@
                 <div class="col-2 d-none d-md-block"></div> <!-- Espaço lateral em telas maiores -->
 
                 <!-- Mensagem de Vitória e botão -->
-                <div class="message-container text-center mt-4 col-9 col-md-7">
+                <div class="message-container text-center mt-4 col-9 col-md-5">
                     <div class="message-text">
                         <div class="col-12 d-none d-md-block"></div> <!-- Espaço lateral em telas maiores -->
                         <h3 class="fw-bold">SUA CHAVE ESTÁ NA MÃO! 🎉</h3>
@@ -253,10 +250,10 @@
             </div>
         </div>
 
-        <div id="loss-container" class="row justify-content-center align-items-center position-relative"
+        <div id="loss-container" class="row justify-content-center align-items-center position-relative col-md-12"
             style="display: none;">
             <div
-                class="col-12 col-md-10 col-lg-8 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center">
+                class="col-12 col-md-10 col-lg-12 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center">
                 <div class="col-2 d-none d-md-block"></div>
                 <!-- Div contendo as imagens lado a lado -->
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100">
@@ -272,7 +269,7 @@
                     <img id="door-loss-image" src="images/portaPerdeu.png" alt="Imagem Porta Perdedora" class="">
 
                     <!-- Mensagem de Vitória e botão -->
-                    <div class="message-container text-center mt-4 col-9 col-md-7">
+                    <div class="message-container text-center mt-4 col-9 col-md-5">
 
                         <div class="message-text">
                             <div class="col-2"></div>
@@ -537,6 +534,8 @@
             });
         }
 
+
+
         function handleAnswer(selectedIndex, button) {
             const currentQuestion = quizData[currentQuestionIndex];
 
@@ -600,6 +599,35 @@
                 doorImageEl.src = "images/acertou5.png";
                 door.src = "images/acertou5.png";
             }
+        }
+
+        function restartQuiz() {
+            // Resetar as variáveis globais
+            currentQuestionIndex = 0;
+            correctAnswersCount = 0;
+
+            // Selecionar os elementos visuais
+            const questionEl = document.getElementById("quiz-question");
+            const optionsEl = document.getElementById("quiz-options");
+            const doorImageEl = document.getElementById("door-image");
+            const victoryContainer = document.getElementById("victory-container");
+            const lossContainer = document.getElementById("loss-container");
+            const door = document.getElementById("door-image-desktop");
+
+            // Mostrar os elementos do quiz novamente
+            questionEl.style.display = "block";
+            optionsEl.style.display = "block";
+            doorImageEl.style.display = "block";
+            door.style.display = "block";
+            victoryContainer.style.display = "none";
+            lossContainer.style.display = "none";
+
+            // Resetar a imagem inicial da porta
+            doorImageEl.src = "images/porta.png";
+            door.src = "images/porta.png";
+
+            // Recarregar a primeira pergunta
+            loadQuestion();
         }
 
         loadQuestion();
