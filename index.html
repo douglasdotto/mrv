@@ -75,34 +75,26 @@
     </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid mb-5">
         <div class="row align-items-start" style="margin-top: 0;">
-            <!-- Boneco Image -->
-
-            <div class="col-12 col-md-3 text-center  d-none d-md-block" style="padding-top: 0;">
-                <img src="images/boneco-esquerda.png" alt="Boneco MRV" class="boneco-image">
-            </div>
-
-            <!-- Text, Logo, and Special Ad -->
-            <div class="col-12 col-md-6 d-flex flex-column justify-content-center mt-4">
-                <!-- Special Ad -->
+            <div class="col-12 col-md-12 d-flex flex-column justify-content-center mt-4">
                 <div class="text-center mb-3">
                     <div class="special-ad mx-auto">
                         ESPECIAL PUBLICITÁRIO
                     </div>
                 </div>
 
-                <!-- Text and Logo -->
-                <div class="container-fluid">
-                    <div class="row justify-content-center">
-                        <!-- Logo -->
+                <div class="container-fluid position-relative">
+                    <div class="row justify-content-center position-relative mx-auto header">
+                        <img src="images/boneco-esquerda.png" alt="Boneco MRV" class="boneco-image">
+                        <img src="images/fechadura2superior.png" alt="Fechadura Superior" class="bolinha-image">
                         <div class="col-12 text-center mb-4">
-                            <img src="images/title-logo.png" alt="Logo MRV" class="img-fluid mx-auto d-block">
+                            <img src="images/title-logo.png" alt="Logo MRV" style="max-width: 450px;"
+                                class="img-fluid mx-auto d-block">
                         </div>
 
-                        <!-- Parágrafo -->
                         <div class="col-12 col-md-12 text-center mb-4">
-                            <p class="mx-auto" style="font-size: 17px; line-height: 1.8;">
+                            <p class="mx-auto bem-vindo">
                                 Bem-vindo ao novo espaço exclusivo no BBB 25: <span class="fw-bold">o Apê do Líder
                                     MRV!</span> Inspirado nos
                                 sonhos de milhares de brasileiros, conheça esse ambiente incrível e descubra como
@@ -111,71 +103,53 @@
                             </p>
                         </div>
 
-                        <!-- Botão -->
                         <div class="col-12 text-center ">
-                            <button class="btn btn-light circle-btn shadow p-3" onclick="scrollToNextDiv()">
+                            <button class="btn btn-success circle-btn shadow p-3" onclick="scrollToNextDiv()">
                                 <i class="fas fa-chevron-down"></i>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Fechadura Image -->
-            <div class="col-12 col-md-3 text-end  d-none d-md-block">
-                <img src="images/fechadura2superior.png" alt="Fechadura Superior" class="img-fluid"
-                    style="max-width: 100%; vertical-align: top; margin-top: -80px;">
-            </div>
         </div>
     </div>
 
-
-    <div class="container-fluid section-custom position-relative" id="section-custom">
-        <div class="row justify-content-center align-items-center">
-            <!-- Coluna para a imagem de fundo -->
-            <div class="col-12 position-relative col-md-12">
-                <img src="images/fundo-completo.png" alt="Fundo com card" class="img-fluid custom-background">
-
-                <!-- Texto e botão sobre a imagem -->
-                <div class="custom-text-overlay text-center col-10 col-md-7">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-10 col-lg-8">
+    <div class="container-fluid my-5 py-5">
+        <div class="row justify-content-center align-items-center position-relative" id="section-custom">
+            <div class="col-12 mx-auto custom-text-overlay text-center">
+                <div class="m-800 mx-auto">
+                    <div class="custom-background"></div>
+                    <div class="row justify-content-center m-600">
+                        <div class="col-12">
                             <img src="images/textocard2.png" alt="Texto do card" class="img-fluid textocard-image mb-3">
                         </div>
-                    </div>
 
-                    <!-- Parágrafo ajustado com largura limitada -->
-                    <div class="mx-auto col-10 col-md-8">
-                        <p class="custom-description text-center">
-                            Com mais de <strong>500 mil chaves entregues</strong> em todo o Brasil,
-                            a MRV é a construtora que ajuda milhões de brasileiros a realizarem o
-                            <strong>sonho da casa própria</strong>. Aqui você encontra opções de apartamentos
-                            com condições facilitadas e desconto na primeira parcela.
-                        </p>
+                        <div class="mx-auto col-12">
+                            <p class="custom-description text-center">
+                                Com mais de <strong>500 mil chaves entregues</strong> em todo o Brasil,
+                                a MRV é a construtora que ajuda milhões de brasileiros a realizarem o
+                                <strong>sonho da casa própria</strong>. Aqui você encontra opções de apartamentos
+                                com condições facilitadas e desconto na primeira parcela.
+                            </p>
+                        </div>
+                        <button class="btn btn-success custom-btn">SIMULE AGORA!</button>
                     </div>
-
-                    <!-- Botão -->
-                    <button class="btn custom-btn">SIMULE AGORA!</button>
                 </div>
             </div>
-        </div>
 
-        <!-- Triângulo no final do card -->
-        <div class="position-absolute bottom-0 translate-middle-x">
-            <img src="images/esquerdo.png" alt="Triângulo Laranja" class="img-fluid">
+            <div class="position-absolute" style="bottom: -150px; z-index: -99">
+                <img src="images/esquerdo.png" alt="Triângulo Laranja" class="img-fluid">
+            </div>
         </div>
     </div>
-
 
     <div class="triangulo-container mt-5 d-none d-md-block">
         <img src="images/trianguloDireito.png" alt="Triângulo Laranja" class="triangulo-direito">
     </div>
 
-
-
-    <div class="container col-12 col-md-10">
+    <div class="container col-12 col-md-10 my-5 py-5">
         <!-- Título e Descrição -->
-        <div class="row justify-content-center align-items-center mt-2">
+        <div class="row justify-content-center align-items-center mt-5">
             <div class="col-12 d-flex justify-content-center align-items-center">
                 <h2 class="Conquiste-title text-center">
                     Conquiste a chave do Apê do Líder!
@@ -196,16 +170,15 @@
                 <img id="door-image-desktop" src="images/Porta.png" alt="Imagem Porta para Desktop"
                     class="d-none d-md-block">
 
-
                 <!-- Quiz Overlay -->
                 <div class="quiz-overlay">
                     <!-- Pergunta -->
-                    <div id="quiz-question" class="quiz-question text-wrap text-break mx-auto p-3">
+                    <div id="quiz-question" class="quiz-question text-wrap text-break mx-auto mb-3">
                         <!-- A pergunta será carregada aqui -->
                     </div>
 
                     <!-- Opções -->
-                    <div id="quiz-options" class="quiz-options d-flex flex-column align-items-start ms-4 mb-5">
+                    <div id="quiz-options" class="quiz-options d-flex flex-column align-items-start mb-5">
                         <!-- As opções serão carregadas aqui -->
                     </div>
                 </div>
@@ -245,7 +218,7 @@
 
                         <div class="col-2 d-none d-md-block"></div> <!-- Espaço lateral em telas maiores -->
                     </div>
-                    <button class="simule">SIMULE AGORA!</button>
+                    <button class="btn btn-success simule">SIMULE AGORA!</button>
                 </div>
             </div>
         </div>
@@ -509,16 +482,15 @@
         const lossContainer = document.getElementById("loss-container"); // Contêiner de derrota
         const door = document.getElementById("door-image-desktop"); // Contêiner de derrota
 
-
         function loadQuestion() {
             const currentQuestion = quizData[currentQuestionIndex];
-            questionEl.innerHTML = `<p><strong>${currentQuestionIndex + 1}/${quizData.length}</strong> ${currentQuestion.question}</p>`;
+            questionEl.innerHTML = `<span><span class='counter'>${currentQuestionIndex + 1}/${quizData.length}</span> ${currentQuestion.question}</span>`;
             optionsEl.innerHTML = "";
 
             const letters = ["A", "B", "C"]; // Letras das opções
 
             currentQuestion.options.forEach((option, index) => {
-                const button = document.createElement("button");
+                const button = document.createElement("div");
                 button.className = "quiz-option btn";
                 button.setAttribute("data-index", index);
                 button.innerHTML = `<strong>${letters[index]})</strong> ${option}`;
@@ -534,11 +506,8 @@
             });
         }
 
-
-
         function handleAnswer(selectedIndex, button) {
             const currentQuestion = quizData[currentQuestionIndex];
-
             // Efeito visual de resposta correta ou errada
             if (selectedIndex === currentQuestion.correct) {
                 correctAnswersCount++;  // Incrementa o contador de acertos
@@ -632,7 +601,6 @@
 
         loadQuestion();
     });
-
 </script>
 
 </html>

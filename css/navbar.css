@@ -14,7 +14,7 @@
 }
 
 .barra {
-    background: #fa9302;
+    background: #ff6700;
 }
 
 .barra__main {
@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     height: 50px;
-    background-color: #fa9302;
+    background-color: #ff6700;
 }
 
 @media (min-width: 768px) {

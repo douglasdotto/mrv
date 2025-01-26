@@ -12,6 +12,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Averta-Light';
+    src: url('../fonts/averta-light-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta-Regular';
+    src: url('../fonts/averta-regular-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --gshow-primary: #FF6700;
     --special-ad: #ffaa00;
@@ -27,7 +41,6 @@
     text-align: center;
     font-weight: 500;
     padding: 0px 4px;
-    border-radius: 5px;
     display: inline-block;
 }
 
@@ -43,7 +56,7 @@ body {
 }
 
 .text-primeiroParagrafo {
-    font-family: 'Averta', sans-serif;
+    font-family: "Averta-Light";
     font-size: 19px;
     font-weight: 400;
     line-height: 22.25px;
@@ -105,49 +118,69 @@ body {
     z-index: 1;
 }
 
+.m-800 {
+    max-width: 800px;
+    margin: auto;
+}
+
+.m-600 {
+    max-width: 600px;
+    margin: auto;
+}
+
 /* Imagem de fundo */
 .custom-background {
-    width: 74%;
-    height: auto;
+    height: 780px;
+    width: 100%;
+    top: -60px;
+    z-index: -99;
+    position: absolute;
+    background-image: url(../images/fundo-completo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .custom-text-overlay {
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    color: white;
-    max-width: 70%;
+    max-width: 1000px;
 }
 
 .textocard-image {
-    max-width: 100%;
+    max-width: 475px;
+    width: 100%;
     height: auto;
 }
 
 .custom-description {
-    font-family: 'Averta', sans-serif;
-    font-size: 15px;
-    text-align: justify;
-    margin-bottom: 20px;
+    font-family: "Averta-Light";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.25px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 /* Botão */
 .custom-btn {
-    background-color: #FFC107;
+    font-family: "Averta-Regular";
+    margin-top: 20px;
+    width: 200px;
+    background: linear-gradient(80.85deg, #FF8B22 3.17%, #FFB719 91.16%);
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
-    color: #006B3F;
+    color: #fff;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    transition: opacity 0.3s ease, transform 0.2s ease;
 }
 
 .custom-btn:hover {
-    background-color: #e0a800;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    background: linear-gradient(80.85deg, #FFB719 3.17%, #FF8B22 91.16%);
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .circle-btn {
@@ -172,12 +205,6 @@ body {
 .circle-btn i {
     color: white;
     font-size: 24px;
-}
-
-.boneco-image {
-    vertical-align: top;
-    margin-top: -68px;
-    margin-left: -91px;
 }
 
 footer {
@@ -251,7 +278,7 @@ footer .btn:hover {
 
 .video-item {
     width: 925px !important;
-   height: 500px;
+    height: 500px;
     background-color: #000;
     overflow: hidden;
     position: relative;
@@ -277,7 +304,6 @@ footer .btn:hover {
     font-size: 36px;
     font-weight: bold;
     color: #82EA5B;
-    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
@@ -292,7 +318,7 @@ footer .btn:hover {
 }
 
 .resistente {
-    font-family: Averta;
+    font-family: "Averta-Light";
     font-size: 16px;
     font-weight: 400;
     line-height: 22.25px;
@@ -307,14 +333,14 @@ footer .btn:hover {
     gap: 0px;
     border-radius: 15px;
     background: linear-gradient(84.69deg, #FF8B22 2.34%, #FFB719 84.48%);
-    border: none; 
-    cursor: pointer; 
+    border: none;
+    cursor: pointer;
     transition: opacity 0.3s ease, transform 0.2s ease;
 }
 
 .button-custom-resistente:hover {
-    opacity: 1; 
-    transform: scale(1.05); 
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 /* Ajuste no container */
@@ -369,6 +395,12 @@ footer .btn:hover {
         border: none;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        transition: opacity 0.3s ease, transform 0.2s ease;
+    }
+
+    .custom-btn:hover {
+        opacity: 1;
+        transform: scale(1.05);
     }
 
     .video-item {
@@ -404,37 +436,37 @@ footer .btn:hover {
     /* Quiz Overlay */
     .quiz-overlay {
         position: absolute;
-        top: 22% !important;
-        ;
-        left: 40% !important;
-        ;
+        top: 33%;
+        left: 32%;
         transform: translate(-50%, -50%);
-        width: 80% !important;
-        ;
+        width: 80%;
         border-radius: 10px;
         text-align: center;
     }
 
     .quiz-options .quiz-option {
-        font-size: 12px !important;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #ffffff;
-        transition: background-color 0.3s ease, color 0.3s ease;
+        font-family: "Averta-Light";
+        background-color: white;
+        /* Fundo padrão */
+        color: black;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        padding: 10px 20px;
+        text-align: center;
         cursor: pointer;
-        padding: 2px 0px !important;
-        width: 70% !important;
-        text-align: start;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
     }
 
     .quiz-question {
-        font-size: 14px!important;
-        font-weight: bold!important;
-        margin-bottom: 15px!important;
-        color: white!important;
-        text-align: start!important;
-        margin: 0 auto!important;
+        font-size: 14px !important;
+        font-weight: bold !important;
+        margin-bottom: 15px !important;
+        color: white !important;
+        text-align: start !important;
+        margin: 0 auto !important;
     }
 }
 
@@ -452,7 +484,7 @@ footer .btn:hover {
     top: 33%;
     left: 36%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     border-radius: 10px;
     text-align: center;
 }
@@ -475,23 +507,31 @@ footer .btn:hover {
 }
 
 .quiz-options .quiz-option {
-    font-size: 1rem;
+    font-family: "Averta-Regular";
+    width: 100%;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
     padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #ffffff;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    cursor: pointer;
-    width: 70%;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 22px;
+    color: #006b3f;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 .quiz-options .quiz-option:hover {
-    background-color: #0cff30;
-    color: #ffffff;
+    border: 5px solid #00D38D;
 }
 
+.counter {
+    background-color: #006b3f;
+    padding: 0px 15px 3.5px 15px;
+    border-radius: 5px;
+}
 
 /* Contêiner da mensagem de vitória e derrota */
 .message-container {
@@ -581,4 +621,32 @@ footer .btn:hover {
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 10px;
+}
+
+.header {
+    max-width: 660px;
+}
+
+.bem-vindo {
+    font-family: "Averta-Light";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.25px;
+    text-align: center;
+}
+
+.boneco-image {
+    position: absolute;
+    max-width: 525px;
+    left: -260px;
+    top: -145px;
+    z-index: -99;
+}
+
+.bolinha-image {
+    position: absolute;
+    max-width: 540px;
+    top: -225px;
+    right: -510px;
+    z-index: -99;
 }
