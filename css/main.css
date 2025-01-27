@@ -468,6 +468,81 @@ footer .btn:hover {
         text-align: start !important;
         margin: 0 auto !important;
     }
+
+    .titleLogo {
+        max-width: 100% !important;
+    }
+
+    .boneco-image {
+        position: absolute;
+        max-width: 265px !important;
+        left: -107px !important;
+        top: -100px !important;
+        z-index: -99;
+    }
+
+    .bolinha-image {
+        position: absolute;
+        max-width: 315px !important;
+        top: -200px !important;
+        right: -170px !important;
+        z-index: -99;
+    }
+
+    .Conquiste-title {
+        font-size: 21px !important;
+        font-weight: bold !important;
+        color: #82EA5B !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Descrição */
+    .react-description {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        color: #FFFFFF !important;
+        max-width: 800px !important;
+        margin: 0 auto !important;
+    }
+
+    .quiz-options .quiz-option {
+        font-family: "Averta-Regular";
+        width: 100% !important;
+        background-color: white;
+        color: black;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        padding: 10px 20px;
+        text-align: start!important;
+        cursor: pointer;
+        font-size: 10px!important;
+        color: #006b3f;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+    .porta{
+        max-width: 114%!important;
+        max-height: 300px!important;
+    }
+
+    .jogue{
+        max-width: 250px !important;
+    }
+
+    .resistente {
+        font-family: "Averta-Light";
+        font-size: 18px!important;
+        font-weight: 400;
+        line-height: 22.25px;
+        text-align: center!important;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .Boneco-React{
+        max-width: 100px!important;
+    }
 }
 
 /* Imagem de Fundo */
