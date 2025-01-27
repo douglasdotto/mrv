@@ -491,7 +491,7 @@ footer .btn:hover {
 
 /* Pergunta */
 .quiz-question {
-    font-size: 23px;
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: 15px;
     color: white;
@@ -508,7 +508,7 @@ footer .btn:hover {
 
 .quiz-options .quiz-option {
     font-family: "Averta-Regular";
-    width: 100%;
+    width: 92%;
     background-color: white;
     color: black;
     border: 2px solid transparent;
@@ -523,9 +523,9 @@ footer .btn:hover {
     transition: all 0.3s ease;
 }
 
-.quiz-options .quiz-option:hover {
-    border: 5px solid #00D38D;
-}
+/*.quiz-options .quiz-option:hover {
+    border: 5px solid #82EA5B;
+}*/
 
 .counter {
     background-color: #006b3f;
@@ -609,12 +609,12 @@ footer .btn:hover {
 
 .simule {
     width: 235px;
-    height: 52px;
+    height: 60px;
     border: 2px solid #006B3F;
     background-color: transparent;
     color: #006B3F;
     border-radius: 10px 0px 0px 0px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     line-height: 52px;

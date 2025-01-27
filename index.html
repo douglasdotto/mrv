@@ -132,12 +132,13 @@
                                 com condições facilitadas e desconto na primeira parcela.
                             </p>
                         </div>
-                        <button class="btn btn-success custom-btn">SIMULE AGORA!</button>
+                        <button class="btn btn-success custom-btn"
+                            onclick="window.location.href='https://www.mrvnobbb.com.br/home';">SIMULE AGORA!</button>
                     </div>
                 </div>
             </div>
 
-            <div class="position-absolute" style="bottom: -150px; z-index: -99">
+            <div class="position-absolute" style="bottom: -220px; z-index: -99; right: 10px;">
                 <img src="images/esquerdo.png" alt="Triângulo Laranja" class="img-fluid">
             </div>
         </div>
@@ -207,7 +208,7 @@
                 <div class="col-2 d-none d-md-block"></div> <!-- Espaço lateral em telas maiores -->
 
                 <!-- Mensagem de Vitória e botão -->
-                <div class="message-container text-center mt-4 col-9 col-md-5">
+                <div class="message-container text-center mt-4 col-9 col-md-4">
                     <div class="message-text">
                         <div class="col-12 d-none d-md-block"></div> <!-- Espaço lateral em telas maiores -->
                         <h3 class="fw-bold">SUA CHAVE ESTÁ NA MÃO! 🎉</h3>
@@ -218,7 +219,8 @@
 
                         <div class="col-2 d-none d-md-block"></div> <!-- Espaço lateral em telas maiores -->
                     </div>
-                    <button class="btn btn-success simule">SIMULE AGORA!</button>
+                    <button class="btn btn-success simule"
+                        onclick="window.location.href='https://www.mrvnobbb.com.br/home';">SIMULE AGORA!</button>
                 </div>
             </div>
         </div>
@@ -242,7 +244,7 @@
                     <img id="door-loss-image" src="images/portaPerdeu.png" alt="Imagem Porta Perdedora" class="">
 
                     <!-- Mensagem de Vitória e botão -->
-                    <div class="message-container text-center mt-4 col-9 col-md-5">
+                    <div class="message-container text-center mt-4 col-9 col-md-4">
 
                         <div class="message-text">
                             <div class="col-2"></div>
@@ -252,7 +254,8 @@
                             <div class="col-2"></div>
                         </div>
 
-                        <button class="simule">RECOMEÇAR!</button>
+                        <button class="simule" onclick="restartQuiz()">RECOMEÇAR!</button>
+
 
                     </div>
                     <div class="col-2 d-none d-md-block"></div>
@@ -285,89 +288,90 @@
     </div>
 
 
-    <div class="position-relative" id="video-item">
-        <div class="container py-5">
+    <div class="container py-5">
+        <div class="row justify-content-center align-items-center mt-2" style="position: relative; z-index: 1;">
             <div class="row justify-content-center align-items-center mt-2" style="position: relative; z-index: 1;">
-                <div class="row justify-content-center align-items-center mt-4" style="position: relative; z-index: 1;">
-                    <!-- Título "REACT DA LIDERANÇA" -->
-                    <div class="col-12 d-flex justify-content-center align-items-center">
+                <div class="col-4 col-md-1 d-flex justify-content-center align-items-center">
+                    <img src="images/bonecoReact.png" alt="Boneco React" class="img-fluid" style="max-width: 150px;">
+                </div>
+                <div class="col-6 col-md-6 d-flex justify-content-center align-items-center mt-2">
+                    <div>
                         <h2 class="react-title text-center">
                             REACT DA LIDERANÇA
                         </h2>
-                    </div>
-
-                    <!-- Texto abaixo do título -->
-                    <div class="col-6 col-md-8 d-flex justify-content-center align-items-center mt-2">
                         <p class="react-description text-center">
                             A MRV convidou o Talento XX para assistir e comentar os momentos importantes que rolaram
                             dentro do Apê do Líder MRV. <strong>Dá o play!</strong>
                         </p>
                     </div>
                 </div>
-                <div class="row justify-content-center align-items-center mt-2" style="position: relative; z-index: 1;">
-                    <div class="col-12 col-md-10 d-flex justify-content-center align-items-center mt-2">
-                        <div class="video-item" id="video" data-aos="" data-aos-duration="2250">
-                        </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <div class="row justify-content-center align-items-center" style="position: relative; z-index: 1;">
+                <div class="col-12 col-md-10 d-flex justify-content-center align-items-center mt-2">
+                    <div class="video-item" id="video" data-aos="" data-aos-duration="2250">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <footer class="container-fluid bg-success text-white py-4 position-relative">
-            <!-- Imagens de fundo -->
-            <img src="images/footerLadoEsquerdo.png" alt="Triângulo Esquerdo"
-                class="position-absolute img-triangulo-esquerdo" style="bottom: 0; left: 0; max-width: 280px;">
-            <img src="images/footerLadoDireito.png" alt="Triângulo Direito"
-                class="position-absolute img-triangulo-direito" style="bottom: 0; right: 0; max-width: 280px;">
+    <footer class="container-fluid bg-success text-white py-4 position-relative">
+        <!-- Imagens de fundo -->
+        <img src="images/footerLadoEsquerdo.png" alt="Triângulo Esquerdo"
+            class="position-absolute img-triangulo-esquerdo" style="bottom: 0; left: 0; max-width: 280px;">
+        <img src="images/footerLadoDireito.png" alt="Triângulo Direito" class="position-absolute img-triangulo-direito"
+            style="bottom: 0; right: 0; max-width: 280px;">
 
-            <!-- Botão para voltar ao topo -->
-            <div class="row">
-                <div class="col-12">
-                    <button class="circle-btn position-absolute d-none d-md-block"
-                        style="width: 50px; height: 50px; bottom: 350px; right: 200px;" onclick="scrollToTop()">
-                        <i class="fas fa-chevron-up"></i>
-                    </button>
-                </div>
+        <!-- Botão para voltar ao topo -->
+        <div class="row">
+            <div class="col-12">
+                <button class="circle-btn position-absolute d-none d-md-block"
+                    style="width: 50px; height: 50px; bottom: 350px; right: 200px;" onclick="scrollToTop()">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
             </div>
+        </div>
 
-            <div class="row text-center justify-content-center align-items-center">
-                <!-- BBB Logo e MRV Logo -->
-                <div class="col-12 mb-3">
-                    <img src="images/logo-BBB.png" alt="Big Brother Brasil Logo" class="img-fluid me-3"
-                        style="max-width: 200px;">
-                    <img src="images/logo-MRV.png" alt="MRV Logo" class="img-fluid" style="max-width: 200px;">
-                </div>
+        <div class="row text-center justify-content-center align-items-center">
+            <!-- BBB Logo e MRV Logo -->
+            <div class="col-12 mb-3">
+                <img src="images/logo-BBB.png" alt="Big Brother Brasil Logo" class="img-fluid me-3"
+                    style="max-width: 200px;">
+                <img src="images/logo-MRV.png" alt="MRV Logo" class="img-fluid" style="max-width: 200px;">
             </div>
+        </div>
 
-            <!-- Texto Central -->
-            <div class="row text-center justify-content-center my-1">
-                <div class="col-12">
-                    <h5>Gostou do conteúdo?</h5>
-                    <p>Compartilhe com quem vai curtir</p>
-                </div>
+        <!-- Texto Central -->
+        <div class="row text-center justify-content-center my-1">
+            <div class="col-12">
+                <h5>Gostou do conteúdo?</h5>
+                <p>Compartilhe com quem vai curtir</p>
             </div>
+        </div>
 
-            <!-- Ícones de Compartilhamento -->
-            <div class="row text-center justify-content-center">
-                <div class="d-flex justify-content-center align-items-center gap-2">
-                    <a href="#" class="icon-container">
-                        <img src="images/f.png" alt="Facebook Icon" class="img-fluid">
-                    </a>
-                    <a href="#" class="icon-container">
-                        <img src="images/e.png" alt="Email Icon" class="img-fluid">
-                    </a>
-                    <a href="#" class="icon-container">
-                        <img src="images/x.png" alt="Twitter Icon" class="img-fluid">
-                    </a>
-                </div>
+        <!-- Ícones de Compartilhamento -->
+        <div class="row text-center justify-content-center">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+                <a href="#" class="icon-container">
+                    <img src="images/f.png" alt="Facebook Icon" class="img-fluid">
+                </a>
+                <a href="#" class="icon-container">
+                    <img src="images/e.png" alt="Email Icon" class="img-fluid">
+                </a>
+                <a href="#" class="icon-container">
+                    <img src="images/x.png" alt="Twitter Icon" class="img-fluid">
+                </a>
             </div>
+        </div>
 
-        </footer>
+    </footer>
 
 
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 <script>
@@ -508,25 +512,20 @@
 
         function handleAnswer(selectedIndex, button) {
             const currentQuestion = quizData[currentQuestionIndex];
-            // Efeito visual de resposta correta ou errada
+
             if (selectedIndex === currentQuestion.correct) {
-                correctAnswersCount++;  // Incrementa o contador de acertos
-                button.style.backgroundColor = "#28a745"; // Verde para resposta certa
-                button.style.color = "#ffffff"; // Texto branco
+                correctAnswersCount++;
+                button.style.backgroundColor = "#82EA5B";
+                button.style.color = "#ffffff";
             } else {
-                button.style.backgroundColor = "#FF8B22"; // Vermelho para resposta errada
-                button.style.color = "#ffffff"; // Texto branco
+                button.style.backgroundColor = "#FF8B22";
+                button.style.color = "#ffffff";
             }
 
-            const allButtons = optionsEl.querySelectorAll("button");
+            const allButtons = optionsEl.querySelectorAll(".quiz-option");
             allButtons.forEach(btn => btn.disabled = true);
 
-            if (correctAnswersCount < 5) {
-                currentQuestionIndex++;
-                if (currentQuestionIndex < quizData.length) {
-                    loadQuestion();
-                }
-            }
+            currentQuestionIndex++;
 
             if (correctAnswersCount === 5) {
                 setTimeout(() => {
@@ -536,20 +535,40 @@
                     door.style.setProperty("display", "none", "important");
                     victoryContainer.style.display = "block";
                 }, 1000);
+            } else {
+                if (currentQuestionIndex < quizData.length) {
+                    setTimeout(() => {
+                        loadQuestion();
+                    }, 300);
+                }
             }
 
-            if (currentQuestionIndex === quizData.length - 1 && correctAnswersCount < 5) {
-                setTimeout(() => {
-                    questionEl.style.display = "none";
-                    optionsEl.style.setProperty("display", "none", "important");
-                    doorImageEl.style.setProperty("display", "none", "important");
-                    door.style.setProperty("display", "none", "important");
-                    lossContainer.style.display = "block";
-                }, 1000);
+
+
+            if ((currentQuestionIndex === quizData.length)) {
+                if (correctAnswersCount >= 5) {
+                    setTimeout(() => {
+                        questionEl.style.display = "none";
+                        optionsEl.style.setProperty("display", "none", "important");
+                        doorImageEl.style.display = "none";
+                        door.style.setProperty("display", "none", "important");
+                        victoryContainer.style.display = "block";
+                    }, 1000);
+                } else {
+                    setTimeout(() => {
+                        questionEl.style.display = "none";
+                        optionsEl.style.setProperty("display", "none", "important");
+                        doorImageEl.style.setProperty("display", "none", "important");
+                        door.style.setProperty("display", "none", "important");
+                        lossContainer.style.display = "block";
+                    }, 1000);
+                }
             }
 
             updateDoorImage();
         }
+
+
 
         function updateDoorImage() {
             if (correctAnswersCount === 1) {
@@ -571,6 +590,8 @@
         }
 
         function restartQuiz() {
+            console.log("Reiniciando o quiz...");
+
             // Resetar as variáveis globais
             currentQuestionIndex = 0;
             correctAnswersCount = 0;
@@ -595,10 +616,16 @@
             doorImageEl.src = "images/porta.png";
             door.src = "images/porta.png";
 
+            // Remover todas as opções antigas
+            optionsEl.innerHTML = "";
+
             // Recarregar a primeira pergunta
             loadQuestion();
-        }
 
+            console.log("Quiz reiniciado com sucesso!");
+        }
+        // Expor a função restartQuiz globalmente
+        window.restartQuiz = restartQuiz;
         loadQuestion();
     });
 </script>
