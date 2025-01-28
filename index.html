@@ -86,7 +86,8 @@
 
                 <div class="container-fluid position-relative">
                     <div class="row justify-content-center position-relative mx-auto header">
-                        <img src="images/boneco-esquerda.png" alt="Boneco MRV" class="boneco-image">
+                        <img src="images/boneco-esquerda.png" alt="Boneco MRV" class="boneco-image d-none d-md-block">
+                        <img src="images/boneco-esquerda2.png" alt="Boneco MRV" class="boneco-image d-md-none d-block">
                         <img src="images/fechadura2superior.png" alt="Fechadura Superior" class="bolinha-image">
                         <div class="col-12 text-center mb-4">
                             <img src="images/title-logo.png" alt="Logo MRV" style="max-width: 450px;"
@@ -202,14 +203,12 @@
                 <div class="col-2 d-none d-md-block"></div> <!-- Espaço lateral em telas maiores -->
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100">
                     <!-- Imagem da Vitória -->
-                    <img id="victory-image" src="images/venceu.png" alt="Imagem Vencedora"
+                    <img id="victory-image" src="images/venceu2.png" alt="Imagem Vencedora"
                         class="img-fluid d-md-none mb-3 mx-2">
                     <img id="victory-image-desktop" src="images/venceu.png" alt="Imagem Vencedora para Desktop"
                         class="d-none d-md-block mb-3 mx-2">
 
                     <!-- Imagem da Porta Vencedora -->
-                    <img id="door-victory-image" src="images/bonecoVenceu.png" alt="Imagem Porta Vencedora"
-                        class="img-fluid d-md-none mx-2">
                     <img id="door-victory-image-desktop" src="images/bonecoVenceu.png"
                         alt="Imagem Porta Vencedora para Desktop" class="d-none d-md-block mx-2">
                 </div>
@@ -242,14 +241,14 @@
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100">
                     <!-- Imagem de Perda -->
                     <!-- Imagem para Mobile -->
-                    <img id="loss-image-mobile" src="images/perdeu.png" alt="Imagem Perdeu" class="img-fluid d-md-none">
+                    <img id="loss-image-mobile" src="images/perdeu2.png" alt="Imagem Perdeu" class="d-md-none" style="max-width: 360px;">
 
                     <!-- Imagem para Desktop -->
                     <img id="loss-image-desktop" src="images/perdeu.png" alt="Imagem Perdeu para Desktop"
                         class="d-none d-md-block">
 
                     <!-- Imagem da Porta Perdedora -->
-                    <img id="door-loss-image" src="images/portaPerdeu.png" alt="Imagem Porta Perdedora" class="">
+                    <img id="door-loss-image" src="images/portaPerdeu.png" alt="Imagem Porta Perdedora" class="d-none d-md-block">
 
                     <!-- Mensagem de Vitória e botão -->
                     <div class="message-container-loss text-center mt-4 col-9 col-md-5">
@@ -262,7 +261,7 @@
                             <div class="col-2"></div>
                         </div>
 
-                        <button class="simule" onclick="restartQuiz()">RECOMEÇAR!</button>
+                        <button class="simule recomecar" onclick="restartQuiz()">RECOMEÇAR!</button>
                     </div>
                     <div class="col-2 d-none d-md-block"></div>
                 </div>
@@ -334,10 +333,11 @@
         <div class="row justify-content-center align-items-center mt-2" style="position: relative; z-index: 1;"
             data-aos="fade-up" data-aos-duration="1500">
             <div class="row justify-content-center align-items-center mt-2" style="position: relative; z-index: 1;">
-                <div class="col-12 col-md-6 d-flex justify-content-end align-items-center">
-                    <img src="images/bottom.png" alt="Boneco React" class="img-fluid Boneco-React">
+                <div class="col-6 col-md-6 d-flex justify-content-end align-items-center">
+                    <img src="images/bottom.png" alt="Boneco React" class="img-fluid Boneco-React d-none d-md-block">
+                    <img src="images/bottom2.png" alt="Boneco React" class="img-fluid Boneco-React d-md-none d-block">
                 </div>
-                <div class="col-12 col-md-6 d-flex justify-content-start align-self-end">
+                <div class="col-6 col-md-6 d-flex justify-content-start align-self-end">
                     <p class="react-description">
                         A MRV foi pras ruas conversar com o povo pra saber o que as pessoas fariam para conquistar a
                         liderança e um apê da MRV. <strong>Dá o play!</strong>

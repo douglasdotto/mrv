@@ -409,7 +409,7 @@ footer .btn:hover {
         max-width: 380px !important;
         height: 580px;
         position: absolute;
-        background-image: url(../images/fundo-completo2.png)!important;
+        background-image: url(../images/fundo-completo2.png) !important;
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -417,7 +417,7 @@ footer .btn:hover {
 
     /* Aumenta a largura da imagem */
     .textocard-image {
-        max-width:230px !important;
+        max-width: 230px !important;
         height: auto;
     }
 
@@ -444,17 +444,17 @@ footer .btn:hover {
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         transition: opacity 0.3s ease, transform 0.2s ease;
-        max-width: 134px!important;
-        max-height: 40px!important;
-        margin-left: 60px!important;
+        max-width: 134px !important;
+        max-height: 40px !important;
+        margin-left: 60px !important;
     }
 
     .custom-btn:hover {
-        opacity: 1!important;
-        transform: scale(1.05)!important;
-        max-width: 134px!important;
-        max-height: 40px!important;
-        margin-left: 60px!important;
+        opacity: 1 !important;
+        transform: scale(1.05) !important;
+        max-width: 134px !important;
+        max-height: 40px !important;
+        margin-left: 60px !important;
     }
 
     .video-item {
@@ -490,10 +490,10 @@ footer .btn:hover {
     /* Quiz Overlay */
     .quiz-overlay {
         position: absolute;
-        top: 33%!important;
-        left: 32%!important;
-        width: 60%!important;
-        transform: translate(-43%, -28%)!important;
+        top: 33% !important;
+        left: 32% !important;
+        width: 60% !important;
+        transform: translate(-43%, -24%) !important;
         border-radius: 10px;
         text-align: center;
     }
@@ -516,6 +516,7 @@ footer .btn:hover {
 
     .quiz-question {
         font-size: 14px !important;
+        line-height: 24.66px !important;
         font-weight: bold !important;
         margin-bottom: 15px !important;
         color: white !important;
@@ -524,25 +525,23 @@ footer .btn:hover {
     }
 
     .titleLogo {
-        width: 202.93px!important;
-         height: 116.54px!important;
-        top: 65px!important;
-        left: 105px!important;
+        max-width: 202.93px !important;
     }
 
     .boneco-image {
         position: absolute;
-        max-width: 265px !important;
-        left: -107px !important;
+        max-width: 260px !important;
+        left: -64px !important;
         top: -100px !important;
         z-index: -99;
+
     }
 
     .bolinha-image {
         position: absolute;
-        max-width: 315px !important;
+        max-width: 310px !important;
         top: -200px !important;
-        right: -170px !important;
+        right: -155px !important;
         z-index: -99;
     }
 
@@ -555,16 +554,16 @@ footer .btn:hover {
 
     /* Descrição */
     .react-description {
-        font-size: 14px !important;
+        font-size: 12px !important;
         line-height: 1.6 !important;
         color: #FFFFFF !important;
-        max-width: 800px !important;
+        max-width: 330px !important;
         margin: 0 auto !important;
     }
 
     .quiz-options .quiz-option {
         font-family: "Averta-Regular";
-        width: 145%!important;
+        width: 145% !important;
         text-align: center !important;
         font-size: 12px !important;
     }
@@ -572,7 +571,7 @@ footer .btn:hover {
     .porta {
         width: 350px !important;
         max-height: 300px !important;
-        margin-top: 100px !important;
+        margin-top: 120px !important;
     }
 
     .jogue {
@@ -586,11 +585,11 @@ footer .btn:hover {
         line-height: 22.25px;
         text-align: start !important;
         text-decoration-skip-ink: none;
-        margin-left: 90px!important;
+        margin-left: 90px !important;
     }
 
     .Boneco-React {
-        max-width: 100px !important;
+        max-width: 160px !important;
     }
 
     body {
@@ -605,6 +604,75 @@ footer .btn:hover {
         text-align: center;
     }
 
+    .mrvnobbb {
+        font-family: "Averta-Regular" !important;
+        font-size: 20px !important;
+        font-weight: 900 !important;
+        line-height: 29.5px !important;
+        text-align: center !important;
+    }
+
+    /* Contêiner da mensagem de vitória e derrota */
+    .message-container-vic {
+        position: absolute;
+        top: 61% !important;
+        left: 51% !important;
+        transform: translate(-50%, -50%) !important;
+        text-align: center;
+        color: white;
+        z-index: 10;
+        max-width: 280px !important;
+    }
+
+    /* Contêiner da mensagem de vitória e derrota */
+    .message-container-loss {
+        position: absolute !important;
+        top: 64% !important;
+        left: 53% !important;
+        transform: translate(-50%, -50%) !important;
+        text-align: center !important;
+        color: white !important;
+        z-index: 10 !important;
+        max-width: 280px !important;
+    }
+
+    .custom-span {
+        font-family: "Averta-Regular";
+        font-size: 13px!important;
+        font-weight: 800;
+        line-height: 24.72px;
+        text-align: center;
+    }
+
+    .recomecar {
+        width: 148px!important;
+        height: 34px!important;
+        border: 2px solid #006B3F;
+        background-color: transparent;
+        color: #006B3F;
+        border-radius: 10px 0px 0px 0px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 10px;
+    }
+
+    .simule {
+        width: 200px!important;
+        height: 34px!important;
+        border: 2px solid #006B3F!important;
+        background-color: transparent!important;
+        color: #006B3F!important;
+        border-radius: 10px 10px 10px 10px!important;
+        font-size: 18px;
+        font-weight: bold!important;
+        text-align: center!important;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 10px!important;
+    }
 }
 
 /* Imagem de Fundo */
