@@ -406,14 +406,18 @@ footer .btn:hover {
 
     /* Imagem de fundo */
     .custom-background {
-        width: 100%;
+        max-width: 380px !important;
         height: 580px;
-        margin-left: -5%;
+        position: absolute;
+        background-image: url(../images/fundo-completo2.png)!important;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
+
 
     /* Aumenta a largura da imagem */
     .textocard-image {
-        max-width: 95%;
+        max-width:230px !important;
         height: auto;
     }
 
@@ -424,7 +428,7 @@ footer .btn:hover {
     }
 
     .custom-description {
-        font-size: 0.9rem;
+        font-size: 14px !important;
         line-height: 1.5;
         text-align: justify;
         margin-bottom: 15px;
@@ -440,11 +444,17 @@ footer .btn:hover {
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         transition: opacity 0.3s ease, transform 0.2s ease;
+        max-width: 134px!important;
+        max-height: 40px!important;
+        margin-left: 60px!important;
     }
 
     .custom-btn:hover {
-        opacity: 1;
-        transform: scale(1.05);
+        opacity: 1!important;
+        transform: scale(1.05)!important;
+        max-width: 134px!important;
+        max-height: 40px!important;
+        margin-left: 60px!important;
     }
 
     .video-item {
@@ -480,10 +490,10 @@ footer .btn:hover {
     /* Quiz Overlay */
     .quiz-overlay {
         position: absolute;
-        top: 33%;
-        left: 32%;
-        transform: translate(-50%, -50%);
-        width: 80%;
+        top: 33%!important;
+        left: 32%!important;
+        width: 60%!important;
+        transform: translate(-43%, -28%)!important;
         border-radius: 10px;
         text-align: center;
     }
@@ -514,7 +524,10 @@ footer .btn:hover {
     }
 
     .titleLogo {
-        max-width: 100% !important;
+        width: 202.93px!important;
+         height: 116.54px!important;
+        top: 65px!important;
+        left: 105px!important;
     }
 
     .boneco-image {
@@ -551,43 +564,47 @@ footer .btn:hover {
 
     .quiz-options .quiz-option {
         font-family: "Averta-Regular";
-        width: 100% !important;
-        background-color: white;
-        color: black;
-        border: 2px solid transparent;
-        border-radius: 8px;
-        padding: 10px 20px;
-        text-align: start !important;
-        cursor: pointer;
-        font-size: 10px !important;
-        color: #006b3f;
-        font-weight: bold;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
+        width: 145%!important;
+        text-align: center !important;
+        font-size: 12px !important;
     }
 
     .porta {
-        max-width: 114% !important;
+        width: 350px !important;
         max-height: 300px !important;
+        margin-top: 100px !important;
     }
 
     .jogue {
-        max-width: 250px !important;
+        max-width: 210px !important;
     }
 
     .resistente {
         font-family: "Averta-Light";
-        font-size: 18px !important;
+        font-size: 15px !important;
         font-weight: 400;
         line-height: 22.25px;
-        text-align: center !important;
-        text-underline-position: from-font;
+        text-align: start !important;
         text-decoration-skip-ink: none;
+        margin-left: 90px!important;
     }
 
     .Boneco-React {
         max-width: 100px !important;
     }
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .bem-vindo {
+        font-family: "Averta-Light";
+        font-size: 14px !important;
+        font-weight: 400;
+        line-height: 22.25px;
+        text-align: center;
+    }
+
 }
 
 /* Imagem de Fundo */
@@ -656,19 +673,32 @@ footer .btn:hover {
 }
 
 /* Contêiner da mensagem de vitória e derrota */
-.message-container {
+.message-container-loss {
     position: absolute;
     top: 45%;
-    left: 36%;
+    left: 35%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     z-index: 10;
+    max-width: 412px;
+}
+
+.message-container-vic {
+    position: absolute;
+    top: 45%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+    max-width: 415px;
 }
 
 /* Estilo do texto da mensagem */
 .message-text {
     margin-bottom: 20px;
+
 }
 
 .message-text h3 {
@@ -679,8 +709,11 @@ footer .btn:hover {
 }
 
 .message-text p {
-    font-size: 21px;
-
+    font-family: 'Averta-Light';
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 24.72px;
+    text-align: center;
 }
 
 /* Botão personalizado para a vitória */
@@ -830,4 +863,12 @@ footer .btn:hover {
 
 .compartilhe {
     font-family: "Averta-Light";
+}
+
+.custom-span {
+    font-family: "Averta-Regular";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24.72px;
+    text-align: center;
 }
