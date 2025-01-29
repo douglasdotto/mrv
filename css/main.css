@@ -733,14 +733,27 @@ footer .btn:hover {
     }
 
     .message-text p {
-        font-size: 14px !important;
-        line-height: 1.5;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15.3px;
+        margin-bottom: 5px;
+        text-align: center;
     }
 
     .message-text h3 {
-        font-size: 15px !important;
-        font-weight: bold;
-        color: #f8f9fa;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 20.25px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .custom-span {
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 15.3px;
+        margin-bottom: 5px;
+        text-align: center;
     }
 
     /* Quiz Overlay */
@@ -878,14 +891,6 @@ footer .btn:hover {
         max-width: 280px !important;
     }
 
-    .custom-span {
-        font-family: "Averta-Regular";
-        font-size: 13px !important;
-        font-weight: 800;
-        line-height: 24.72px;
-        text-align: center;
-    }
-
     .recomecar {
         width: 148px !important;
         height: 34px !important;
@@ -903,7 +908,7 @@ footer .btn:hover {
 
     .simule {
         width: 200px !important;
-        height: 34px !important;
+        height: 44px !important;
         border: 2px solid #006B3F !important;
         background-color: transparent !important;
         color: #006B3F !important;

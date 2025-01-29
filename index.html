@@ -202,7 +202,7 @@
         <div id="victory-container" class="row justify-content-center align-items-center position-relative col-lg-12"
             style="display: none;">
             <div
-                class="col-12 col-lg-10 col-lg-12 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center">
+                class="col-12 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center p-0">
                 <!-- Div contendo as imagens -->
                 <div class="col-2 d-none d-lg-block"></div> <!-- Espaço lateral em telas maiores -->
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100">
@@ -239,14 +239,14 @@
         <div id="loss-container" class="row justify-content-center align-items-center position-relative col-lg-12"
             style="display: none;">
             <div
-                class="col-12 col-lg-10 col-lg-12 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center">
+                class="col-12 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center p-0">
                 <div class="col-2 d-none d-lg-block"></div>
                 <!-- Div contendo as imagens lado a lado -->
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100">
                     <!-- Imagem de Perda -->
                     <!-- Imagem para Mobile -->
                     <img id="loss-image-mobile" src="images/perdeu2.png" alt="Imagem Perdeu" class="d-lg-none"
-                        style="max-width: 360px;">
+                        style="max-width: 100%;">
 
                     <!-- Imagem para Desktop -->
                     <img id="loss-image-desktop" src="images/perdeu.png" alt="Imagem Perdeu para Desktop"
@@ -420,7 +420,12 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        AOS.init();
+        AOS.init({
+            duration: 1500, // Tempo da animação
+            once: false, // Para animar mais de uma vez
+            debounceDelay: 50, // Reduz o número de eventos de scroll
+            throttleDelay: 50, // Faz o scroll mais suave
+        });
         setTimeout(() => {
             window.dispatchEvent(new Event('resize')); // Força um recheck no mobile
         }, 500);
@@ -574,42 +579,46 @@
             // Verificar se a resposta está correta
             if (selectedIndex === currentQuestion.correct) {
                 correctAnswersCount++;
-                button.style.backgroundColor = "#82EA5B"; // Cor de fundo para correta
-                button.style.color = "#ffffff"; // Cor do texto para correta
+                button.style.backgroundColor = "#82EA5B"; // Verde para resposta correta
+                button.style.color = "#ffffff";
             } else {
-                button.style.backgroundColor = "#FF8B22"; // Cor de fundo para incorreta
-                button.style.color = "#ffffff"; // Cor do texto para incorreta
+                button.style.backgroundColor = "#FF8B22"; // Laranja para resposta errada
+                button.style.color = "#ffffff";
             }
 
-            currentQuestionIndex++;
+            currentQuestionIndex++; // Agora incrementa corretamente
 
-            if (currentQuestionIndex < quizData.length) {
+            // 🛠️ **Verificar vitória**
+            if (correctAnswersCount === 5) {
                 setTimeout(() => {
-                    loadQuestion(); // Carregar a próxima pergunta
+                    quizContainer.style.display = "none"; // Oculta o quiz
+                    victoryContainer.style.display = "block"; // Mostra a tela de sucesso
+                }, 1000);
+                return; // Para evitar que continue para a próxima pergunta
+            }
 
-                    // Reativar os botões após a próxima pergunta ser carregada
+            // 🛠️ **Verificar se todas as perguntas acabaram**
+            if (currentQuestionIndex >= quizData.length) {
+                setTimeout(() => {
+                    if (correctAnswersCount >= 5) {
+                        quizContainer.style.display = "none";
+                        victoryContainer.style.display = "block";
+                    } else {
+                        quizContainer.style.display = "none";
+                        lossContainer.style.display = "block";
+                    }
+                }, 1000);
+            } else {
+                // 🛠️ **Carregar próxima pergunta normalmente**
+                setTimeout(() => {
+                    loadQuestion();
+
+                    // Reativar os botões após carregar a nova pergunta
                     allButtons.forEach(btn => {
                         btn.disabled = false;
                         btn.style.pointerEvents = "auto"; // Permitir cliques novamente
                     });
-                }, 1000); // Timeout de 1 segundo antes de carregar a próxima pergunta
-            } else {
-                // Checar se ganhou ou perdeu após a última pergunta
-                setTimeout(() => {
-                    if (correctAnswersCount >= 5) {
-                        questionEl.style.display = "none";
-                        optionsEl.style.setProperty("display", "none", "important");
-                        doorImageEl.style.display = "none";
-                        door.style.setProperty("display", "none", "important");
-                        victoryContainer.style.display = "block";
-                    } else {
-                        questionEl.style.display = "none";
-                        optionsEl.style.setProperty("display", "none", "important");
-                        doorImageEl.style.setProperty("display", "none", "important");
-                        door.style.setProperty("display", "none", "important");
-                        lossContainer.style.display = "block";
-                    }
-                }, 1000); // Timeout de 1 segundo para exibir o resultado final
+                }, 1000);
             }
 
             updateDoorImage(); // Atualizar a imagem da porta com base nas respostas corretas
@@ -654,6 +663,7 @@
             door.style.display = "block";
             victoryContainer.style.display = "none";
             lossContainer.style.display = "none";
+            quizContainer.style.display = "flex"; // Oculta o quiz
 
             // Resetar a imagem inicial da porta
             doorImageEl.src = "images/porta.png";
