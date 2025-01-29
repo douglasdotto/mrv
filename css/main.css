@@ -82,6 +82,7 @@ html {
 }
 
 body {
+    background-color: #004D2E;
     background: url('../images/bg-verde.png') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
@@ -162,7 +163,7 @@ body {
 
 /* Imagem de fundo */
 .custom-background {
-    height: 780px;
+    height: 745px;
     width: 100%;
     top: -60px;
     z-index: -99;
@@ -339,7 +340,6 @@ footer .btn:hover {
     margin-bottom: 10px;
 }
 
-
 /* Descrição */
 .react-description {
     font-family: "Averta-Light";
@@ -348,6 +348,9 @@ footer .btn:hover {
     line-height: 22.25px;
     text-align: left;
     align-self: end;
+}
+
+.react-description-2 {
     max-width: 395px;
 }
 
@@ -392,289 +395,6 @@ footer .btn:hover {
     max-width: 385px !important;
 }
 
-@media (max-width: 768px) {
-    .img-triangulo-esquerdo {
-        max-width: 110px !important;
-
-    }
-
-    .img-triangulo-direito {
-        max-width: 110px !important;
-        /* Reduz tamanho */
-        right: -11px !important;
-    }
-
-    /* Imagem de fundo */
-    .custom-background {
-        max-width: 380px !important;
-        height: 580px;
-        position: absolute;
-        background-image: url(../images/fundo-completo2.png) !important;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-
-    /* Aumenta a largura da imagem */
-    .textocard-image {
-        max-width: 230px !important;
-        height: auto;
-    }
-
-    /* Texto com largura e alinhamento ajustados */
-    .text-container {
-        padding: 0 5%;
-        max-width: 100%;
-    }
-
-    .custom-description {
-        font-size: 14px !important;
-        line-height: 1.5;
-        text-align: justify;
-        margin-bottom: 15px;
-    }
-
-    /* Botão ajustado */
-    .custom-btn {
-        font-size: 1rem;
-        padding: 10px 20px;
-        background-color: #ffcc00;
-        color: #000;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        transition: opacity 0.3s ease, transform 0.2s ease;
-        max-width: 134px !important;
-        max-height: 40px !important;
-        margin-left: 60px !important;
-    }
-
-    .custom-btn:hover {
-        opacity: 1 !important;
-        transform: scale(1.05) !important;
-        max-width: 134px !important;
-        max-height: 40px !important;
-        margin-left: 60px !important;
-    }
-
-    .video-item {
-        width: 100% !important;
-        height: 300px !important;
-        background-color: #000;
-        overflow: hidden;
-        position: relative;
-        margin: 0;
-    }
-
-    .message-container {
-        position: absolute;
-        top: 17% !important;
-        left: 56% !important;
-        transform: translate(-50%, -50%);
-        text-align: start !important;
-        color: white;
-        z-index: 10;
-    }
-
-    .message-text p {
-        font-size: 14px !important;
-        line-height: 1.5;
-    }
-
-    .message-text h3 {
-        font-size: 15px !important;
-        font-weight: bold;
-        color: #f8f9fa;
-    }
-
-    /* Quiz Overlay */
-    .quiz-overlay {
-        position: absolute;
-        top: 33% !important;
-        left: 32% !important;
-        width: 60% !important;
-        transform: translate(-43%, -24%) !important;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    .quiz-options .quiz-option {
-        font-family: "Averta-Light";
-        background-color: white;
-        /* Fundo padrão */
-        color: black;
-        border: 2px solid transparent;
-        border-radius: 8px;
-        padding: 10px 20px;
-        text-align: center;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-    }
-
-    .quiz-question {
-        font-size: 14px !important;
-        line-height: 24.66px !important;
-        font-weight: bold !important;
-        margin-bottom: 15px !important;
-        color: white !important;
-        text-align: start !important;
-        margin: 0 auto !important;
-    }
-
-    .titleLogo {
-        max-width: 202.93px !important;
-    }
-
-    .boneco-image {
-        position: absolute;
-        max-width: 260px !important;
-        left: -64px !important;
-        top: -100px !important;
-        z-index: -99;
-
-    }
-
-    .bolinha-image {
-        position: absolute;
-        max-width: 310px !important;
-        top: -200px !important;
-        right: -155px !important;
-        z-index: -99;
-    }
-
-    .Conquiste-title {
-        font-size: 21px !important;
-        font-weight: bold !important;
-        color: #82EA5B !important;
-        margin-bottom: 10px !important;
-    }
-
-    /* Descrição */
-    .react-description {
-        font-size: 12px !important;
-        line-height: 1.6 !important;
-        color: #FFFFFF !important;
-        max-width: 330px !important;
-        margin: 0 auto !important;
-    }
-
-    .quiz-options .quiz-option {
-        font-family: "Averta-Regular";
-        width: 145% !important;
-        text-align: center !important;
-        font-size: 12px !important;
-    }
-
-    .porta {
-        width: 350px !important;
-        max-height: 300px !important;
-        margin-top: 120px !important;
-    }
-
-    .jogue {
-        max-width: 210px !important;
-    }
-
-    .resistente {
-        font-family: "Averta-Light";
-        font-size: 15px !important;
-        font-weight: 400;
-        line-height: 22.25px;
-        text-align: start !important;
-        text-decoration-skip-ink: none;
-        margin-left: 90px !important;
-    }
-
-    .Boneco-React {
-        max-width: 160px !important;
-    }
-
-    body {
-        overflow-x: hidden !important;
-    }
-
-    .bem-vindo {
-        font-family: "Averta-Light";
-        font-size: 14px !important;
-        font-weight: 400;
-        line-height: 22.25px;
-        text-align: center;
-    }
-
-    .mrvnobbb {
-        font-family: "Averta-Regular" !important;
-        font-size: 20px !important;
-        font-weight: 900 !important;
-        line-height: 29.5px !important;
-        text-align: center !important;
-    }
-
-    /* Contêiner da mensagem de vitória e derrota */
-    .message-container-vic {
-        position: absolute;
-        top: 61% !important;
-        left: 51% !important;
-        transform: translate(-50%, -50%) !important;
-        text-align: center;
-        color: white;
-        z-index: 10;
-        max-width: 280px !important;
-    }
-
-    /* Contêiner da mensagem de vitória e derrota */
-    .message-container-loss {
-        position: absolute !important;
-        top: 64% !important;
-        left: 53% !important;
-        transform: translate(-50%, -50%) !important;
-        text-align: center !important;
-        color: white !important;
-        z-index: 10 !important;
-        max-width: 280px !important;
-    }
-
-    .custom-span {
-        font-family: "Averta-Regular";
-        font-size: 13px!important;
-        font-weight: 800;
-        line-height: 24.72px;
-        text-align: center;
-    }
-
-    .recomecar {
-        width: 148px!important;
-        height: 34px!important;
-        border: 2px solid #006B3F;
-        background-color: transparent;
-        color: #006B3F;
-        border-radius: 10px 0px 0px 0px;
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        border-radius: 10px;
-    }
-
-    .simule {
-        width: 200px!important;
-        height: 34px!important;
-        border: 2px solid #006B3F!important;
-        background-color: transparent!important;
-        color: #006B3F!important;
-        border-radius: 10px 10px 10px 10px!important;
-        font-size: 18px;
-        font-weight: bold!important;
-        text-align: center!important;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        border-radius: 10px!important;
-    }
-}
-
 /* Imagem de Fundo */
 .quiz-background {
     width: 100%;
@@ -716,14 +436,13 @@ footer .btn:hover {
     font-family: "Averta-Regular";
     width: 92%;
     background-color: white;
-    color: black;
+    color: #006B3F;
     border: 2px solid transparent;
     border-radius: 8px;
     padding: 10px 20px;
     text-align: center;
     cursor: pointer;
     font-size: 22px;
-    color: #006b3f;
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
@@ -778,7 +497,7 @@ footer .btn:hover {
 
 .message-text p {
     font-family: 'Averta-Light';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 550;
     line-height: 24.72px;
     text-align: center;
@@ -887,23 +606,20 @@ footer .btn:hover {
 
 .video-wrapper {
     position: relative;
-    width: 100%;
+    width: 550px;
     height: 325px;
     border-radius: 20px;
     overflow: hidden;
     transform: rotateX(3deg) rotateY(16deg) rotateZ(-2deg);
     perspective: 450px;
+    margin: auto;
     -webkit-perspective: 450px;
-    margin-left: 50px;
 }
 
 .vector {
     position: absolute;
-    bottom: 20px;
-}
-
-.custom-video-container {
-    width: 50%;
+    bottom: 35px;
+    left: 35px;
 }
 
 .video-inner {
@@ -911,7 +627,7 @@ footer .btn:hover {
     transform: rotateX(3deg) rotateY(16deg) rotateZ(-2deg);
     transform-origin: -40% 100% 0px;
     overflow: hidden;
-    margin-left: 20px;
+    margin-left: 75px;
 }
 
 .video-inner video {
@@ -935,8 +651,297 @@ footer .btn:hover {
 
 .custom-span {
     font-family: "Averta-Regular";
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 800;
     line-height: 24.72px;
     text-align: center;
+}
+
+.img-1 {
+    bottom: -220px;
+    z-index: -99;
+    right: 10px;
+}
+
+
+@media (max-width: 992px) {
+    .img-triangulo-esquerdo {
+        max-width: 110px !important;
+
+    }
+
+    .triangulo-container {
+        position: absolute;
+        top: 355px;
+        z-index: 1;
+        max-width: 235px;
+    }
+
+    .img-triangulo-direito {
+        max-width: 110px !important;
+        /* Reduz tamanho */
+        right: -11px !important;
+    }
+
+    /* Aumenta a largura da imagem */
+    .textocard-image {
+        margin-top: -30px;
+        max-width: 300px !important;
+        height: auto;
+    }
+
+    /* Texto com largura e alinhamento ajustados */
+    .text-container {
+        padding: 0 5%;
+        max-width: 100%;
+    }
+
+    .custom-description {
+        font-size: 12px !important;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    /* Botão ajustado */
+    .custom-btn {
+        margin-top: 0px !important;
+        max-width: 100% !important;
+    }
+
+    .custom-btn:hover {
+        opacity: 1 !important;
+        transform: scale(1.05) !important;
+    }
+
+    .video-item {
+        width: 100% !important;
+        height: 300px !important;
+        background-color: #000;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+    }
+
+    .message-container {
+        position: absolute;
+        top: 17% !important;
+        left: 56% !important;
+        transform: translate(-50%, -50%);
+        text-align: start !important;
+        color: white;
+        z-index: 10;
+    }
+
+    .message-text p {
+        font-size: 14px !important;
+        line-height: 1.5;
+    }
+
+    .message-text h3 {
+        font-size: 15px !important;
+        font-weight: bold;
+        color: #f8f9fa;
+    }
+
+    /* Quiz Overlay */
+    .quiz-overlay {
+        position: relative !important;
+        transform: none !important;
+        width: 100% !important;
+        top: 0px;
+        left: 0px;
+    }
+
+    .quiz-question {
+        font-size: 14px !important;
+        line-height: 24.66px !important;
+        font-weight: bold !important;
+        margin-bottom: 15px !important;
+        color: white !important;
+        text-align: start !important;
+        margin: 0 auto !important;
+        margin-bottom: 10px !important;
+    }
+
+    .titleLogo {
+        max-width: 202.93px !important;
+    }
+
+    .boneco-image {
+        position: absolute;
+        max-width: 260px !important;
+        left: -95px !important;
+        top: -100px !important;
+        z-index: -99;
+    }
+
+    .bolinha-image {
+        position: absolute;
+        max-width: 310px !important;
+        top: -200px !important;
+        right: -155px !important;
+        z-index: -99;
+    }
+
+    .Conquiste-title {
+        font-size: 21px !important;
+        font-weight: bold !important;
+        color: #82EA5B !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Descrição */
+    .react-description {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        color: #FFFFFF !important;
+        max-width: 330px !important;
+        margin: 0 auto !important;
+    }
+
+    .react-description-2 {
+        max-width: 395px;
+    }
+
+    .quiz-options .quiz-option {
+        font-family: "Averta-Regular";
+        width: 100% !important;
+        text-align: center !important;
+        font-size: 14px !important;
+        font-weight: 800 !important;
+        line-height: 17.3px !important;
+    }
+
+    .porta {
+        width: 350px !important;
+        max-height: 300px !important;
+    }
+
+    .jogue {
+        max-width: 100% !important;
+    }
+
+    .resistente {
+        font-family: "Averta-Light";
+        font-size: 15px !important;
+        font-weight: 400;
+        line-height: 22.25px;
+        text-align: start !important;
+        text-decoration-skip-ink: none;
+    }
+
+    .Boneco-React {
+        max-width: 100% !important;
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .bem-vindo {
+        font-family: "Averta-Light";
+        font-size: 14px !important;
+        font-weight: 400;
+        line-height: 22.25px;
+        text-align: center;
+    }
+
+    .mrvnobbb {
+        font-family: "Averta-Regular" !important;
+        font-size: 20px !important;
+        font-weight: 900 !important;
+        line-height: 29.5px !important;
+        text-align: center !important;
+    }
+
+    /* Contêiner da mensagem de vitória e derrota */
+    .message-container-vic {
+        position: absolute;
+        top: 61% !important;
+        left: 51% !important;
+        transform: translate(-50%, -50%) !important;
+        text-align: center;
+        color: white;
+        z-index: 10;
+        max-width: 280px !important;
+    }
+
+    /* Contêiner da mensagem de vitória e derrota */
+    .message-container-loss {
+        position: absolute !important;
+        top: 64% !important;
+        left: 53% !important;
+        transform: translate(-50%, -50%) !important;
+        text-align: center !important;
+        color: white !important;
+        z-index: 10 !important;
+        max-width: 280px !important;
+    }
+
+    .custom-span {
+        font-family: "Averta-Regular";
+        font-size: 13px !important;
+        font-weight: 800;
+        line-height: 24.72px;
+        text-align: center;
+    }
+
+    .recomecar {
+        width: 148px !important;
+        height: 34px !important;
+        border: 2px solid #006B3F;
+        background-color: transparent;
+        color: #006B3F;
+        border-radius: 10px 0px 0px 0px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 10px;
+    }
+
+    .simule {
+        width: 200px !important;
+        height: 34px !important;
+        border: 2px solid #006B3F !important;
+        background-color: transparent !important;
+        color: #006B3F !important;
+        border-radius: 10px 10px 10px 10px !important;
+        font-size: 18px;
+        font-weight: bold !important;
+        text-align: center !important;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 10px !important;
+    }
+
+    .m-600 {
+        width: 300px !important;
+        padding-left: 25px !important;
+    }
+
+    .custom-background {
+        min-width: 350px !important;
+        background-image: url(../images/fundo-completo2.png) !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 475px !important;
+    }
+
+    .video-wrapper {
+        width: 100%;
+        height: 100%;
+        perspective: 100%;
+        -webkit-perspective: 100%;
+    }
+
+    .video-inner {
+        margin-left: 50px !important;
+    }
+
+    .vector {
+        width: 125px !important;
+    }
 }

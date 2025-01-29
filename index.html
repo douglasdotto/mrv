@@ -77,7 +77,7 @@
 
     <div class="container-fluid mb-5">
         <div class="row align-items-start" style="margin-top: 0;">
-            <div class="col-12 col-md-12 d-flex flex-column justify-content-center mt-4">
+            <div class="col-12 col-lg-12 d-flex flex-column justify-content-center mt-4">
                 <div class="text-center mb-3">
                     <div class="special-ad mx-auto">
                         ESPECIAL PUBLICITÁRIO
@@ -86,15 +86,14 @@
 
                 <div class="container-fluid position-relative">
                     <div class="row justify-content-center position-relative mx-auto header">
-                        <img src="images/boneco-esquerda.png" alt="Boneco MRV" class="boneco-image d-none d-md-block">
-                        <img src="images/boneco-esquerda2.png" alt="Boneco MRV" class="boneco-image d-md-none d-block">
+                        <img src="images/boneco-esquerda.png" alt="Boneco MRV" class="boneco-image">
                         <img src="images/fechadura2superior.png" alt="Fechadura Superior" class="bolinha-image">
                         <div class="col-12 text-center mb-4">
                             <img src="images/title-logo.png" alt="Logo MRV" style="max-width: 450px;"
                                 class="mx-auto d-block titleLogo">
                         </div>
 
-                        <div class="col-12 col-md-12 text-center mb-4">
+                        <div class="col-12 col-lg-12 text-center mb-4">
                             <p class="mx-auto bem-vindo" data-aos="fade-in" data-aos-duration="1500">
                                 Bem-vindo ao novo espaço exclusivo no BBB 25: <span class="fw-bold">o Apê do Líder
                                     MRV!</span> Inspirado nos
@@ -116,13 +115,14 @@
     </div>
 
     <div class="container-fluid my-5 py-5" id="section-custom">
-        <div class="row justify-content-center align-items-center position-relative">
+        <div class="row justify-content-center align-items-center position-relative p-0">
             <div class="col-12 mx-auto custom-text-overlay text-center">
                 <div class="m-800 mx-auto" data-aos="fade-up" data-aos-duration="1500">
                     <div class="custom-background"></div>
                     <div class="row justify-content-center m-600">
                         <div class="col-12">
-                            <img src="images/textocard2.png" alt="Texto do card" class="img-fluid textocard-image mb-3">
+                            <img src="images/textocard2.png" alt="Texto do card"
+                                class="img-fluid textocard-image mb-0 mb-lg-3">
                         </div>
 
                         <div class="mx-auto col-12">
@@ -139,21 +139,26 @@
                 </div>
             </div>
 
-            <div class="position-absolute d-none d-md-block" style="bottom: -220px; z-index: -99; right: 10px;">
+            <div class="position-absolute d-none d-lg-block" style="bottom: -220px; z-index: -99; right: 10px;">
                 <img src="images/esquerdo.png" alt="Triângulo Laranja" class="img-fluid" data-aos="fade-up"
                     data-aos-duration="1500">
             </div>
         </div>
     </div>
 
-    <div class="triangulo-container mt-5 d-none d-md-block">
+    <div class="triangulo-container d-lg-none d-block mt-5">
+        <img src="images/trianguloDireito2.png" alt="Triângulo Laranja" class="triangulo-direito" data-aos="fade-up"
+            data-aos-duration="1500">
+    </div>
+
+    <div class="triangulo-container d-none d-lg-block mt-5">
         <img src="images/trianguloDireito.png" alt="Triângulo Laranja" class="triangulo-direito" data-aos="fade-up"
             data-aos-duration="1500">
     </div>
 
-    <div class="container col-12 col-md-10 my-5 py-5">
+    <div class="container col-12 col-lg-10 mt-5 pt-5">
         <!-- Título e Descrição -->
-        <div class="row justify-content-center align-items-center mt-5">
+        <div class="row justify-content-center align-items-center mt-0 pt-0 mt-lg-5 pt-lg-5">
             <div class="col-12 d-flex justify-content-center align-items-center">
                 <h2 class="Conquiste-title text-center" data-aos="fade-up" data-aos-duration="1500">
                     Conquiste a chave do Apê do Líder!
@@ -166,13 +171,12 @@
             </div>
         </div>
 
-        <div id="quiz-container" class="row justify-content-center align-items-center mt-4 position-relative mt-5"
+        <div id="quiz-container" class="row justify-content-center align-items-center position-relative mt-1 mt-lg-5"
             data-aos="fade-up" data-aos-duration="1500">
-            <div
-                class="col-12 col-md-10 col-lg-9 d-flex justify-content-center align-items-center position-relative mb-2">
+            <div class="col-12 col-lg-10 d-flex justify-content-center align-items-center position-relative mb-2">
                 <!-- Imagem de Fundo (porta) -->
-                <img id="door-image-desktop" src="images/Porta.png" alt="Imagem Porta para Desktop"
-                    class="d-none d-md-block">
+                <img id="door-image-desktop" src="images/porta.png" alt="Imagem Porta para Desktop"
+                    class="d-none d-lg-block">
 
                 <!-- Quiz Overlay -->
                 <div class="quiz-overlay">
@@ -182,7 +186,7 @@
                     </div>
 
                     <!-- Opções -->
-                    <div id="quiz-options" class="quiz-options d-flex flex-column align-items-start mb-5">
+                    <div id="quiz-options" class="quiz-options d-flex flex-column align-items-start mb-0 mb-lg-5">
                         <!-- As opções serão carregadas aqui -->
                     </div>
                 </div>
@@ -191,40 +195,40 @@
 
         <div class="row justify-content-center mt-4">
             <div class="col-12 d-flex justify-content-center">
-                <img id="door-image" src="images/porta2.png" alt="Imagem Porta" class="img-fluid d-md-none porta">
+                <img id="door-image" src="images/porta2.png" alt="Imagem Porta" class="img-fluid d-lg-none porta">
             </div>
         </div>
 
-        <div id="victory-container" class="row justify-content-center align-items-center position-relative col-md-12"
+        <div id="victory-container" class="row justify-content-center align-items-center position-relative col-lg-12"
             style="display: none;">
             <div
-                class="col-12 col-md-10 col-lg-12 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center">
+                class="col-12 col-lg-10 col-lg-12 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center">
                 <!-- Div contendo as imagens -->
-                <div class="col-2 d-none d-md-block"></div> <!-- Espaço lateral em telas maiores -->
+                <div class="col-2 d-none d-lg-block"></div> <!-- Espaço lateral em telas maiores -->
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100">
                     <!-- Imagem da Vitória -->
                     <img id="victory-image" src="images/venceu2.png" alt="Imagem Vencedora"
-                        class="img-fluid d-md-none mb-3 mx-2">
+                        class="img-fluid d-lg-none mb-3 mx-2">
                     <img id="victory-image-desktop" src="images/venceu.png" alt="Imagem Vencedora para Desktop"
-                        class="d-none d-md-block mb-3 mx-2">
+                        class="d-none d-lg-block mb-3 mx-2">
 
                     <!-- Imagem da Porta Vencedora -->
                     <img id="door-victory-image-desktop" src="images/bonecoVenceu.png"
-                        alt="Imagem Porta Vencedora para Desktop" class="d-none d-md-block mx-2">
+                        alt="Imagem Porta Vencedora para Desktop" class="d-none d-lg-block mx-2">
                 </div>
-                <div class="col-2 d-none d-md-block"></div> <!-- Espaço lateral em telas maiores -->
+                <div class="col-2 d-none d-lg-block"></div> <!-- Espaço lateral em telas maiores -->
 
                 <!-- Mensagem de Vitória e botão -->
-                <div class="message-container-vic text-center mt-4 col-9 col-md-5">
+                <div class="message-container-vic text-center mt-4 col-9 col-lg-5">
                     <div class="message-text">
-                        <div class="col-12 d-none d-md-block"></div> <!-- Espaço lateral em telas maiores -->
+                        <div class="col-12 d-none d-lg-block"></div> <!-- Espaço lateral em telas maiores -->
                         <h3 class="fw-bold">SUA CHAVE ESTÁ NA MÃO! 🎉</h3>
                         <p class="mb-2">
                             Parabéns, Líder! Você mostrou que tem o que é preciso para conquistar seu apê MRV e alcançar
-                            seus sonhos. <span class="custom-span">Comece a planejar sua nova vida com parcelas a partir de R$499!</span>
+                            seus sonhos. <span class="custom-span">Comece a planejar sua nova vida com parcelas a partir
+                                de R$499!</span>
                         </p>
-
-                        <div class="col-2 d-none d-md-block"></div> <!-- Espaço lateral em telas maiores -->
+                        <div class="col-2 d-none d-lg-block"></div> <!-- Espaço lateral em telas maiores -->
                     </div>
                     <button class="btn btn-success simule"
                         onclick="window.location.href='https://www.mrvnobbb.com.br/home';">SIMULE AGORA!</button>
@@ -232,38 +236,41 @@
             </div>
         </div>
 
-        <div id="loss-container" class="row justify-content-center align-items-center position-relative col-md-12"
+        <div id="loss-container" class="row justify-content-center align-items-center position-relative col-lg-12"
             style="display: none;">
             <div
-                class="col-12 col-md-10 col-lg-12 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center">
-                <div class="col-2 d-none d-md-block"></div>
+                class="col-12 col-lg-10 col-lg-12 d-flex justify-content-center align-items-center position-relative flex-column flex-md-row text-center">
+                <div class="col-2 d-none d-lg-block"></div>
                 <!-- Div contendo as imagens lado a lado -->
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100">
                     <!-- Imagem de Perda -->
                     <!-- Imagem para Mobile -->
-                    <img id="loss-image-mobile" src="images/perdeu2.png" alt="Imagem Perdeu" class="d-md-none" style="max-width: 360px;">
+                    <img id="loss-image-mobile" src="images/perdeu2.png" alt="Imagem Perdeu" class="d-lg-none"
+                        style="max-width: 360px;">
 
                     <!-- Imagem para Desktop -->
                     <img id="loss-image-desktop" src="images/perdeu.png" alt="Imagem Perdeu para Desktop"
-                        class="d-none d-md-block">
+                        class="d-none d-lg-block">
 
                     <!-- Imagem da Porta Perdedora -->
-                    <img id="door-loss-image" src="images/portaPerdeu.png" alt="Imagem Porta Perdedora" class="d-none d-md-block">
+                    <img id="door-loss-image" src="images/portaPerdeu.png" alt="Imagem Porta Perdedora"
+                        class="d-none d-lg-block">
 
                     <!-- Mensagem de Vitória e botão -->
-                    <div class="message-container-loss text-center mt-4 col-9 col-md-5">
-
+                    <div class="message-container-loss text-center mt-4 col-9 col-lg-5">
                         <div class="message-text">
                             <div class="col-2"></div>
                             <h3>NÃO FOI DESSA VEZ 😔</h3>
-                            <p>Mas não desista! Um verdadeiro líder sabe que o sucesso vem com persistência. <span class="custom-span">Volte ao
-                                jogo, responda as perguntas novamente e prove que você merece sua chave MRV.</span></p>
+                            <p>Mas não desista! Um verdadeiro líder sabe que o sucesso vem com persistência. <span
+                                    class="custom-span">Volte ao jogo, responda as perguntas novamente e prove que você
+                                    merece sua chave MRV.</span>
+                            </p>
                             <div class="col-2"></div>
                         </div>
 
                         <button class="simule recomecar" onclick="restartQuiz()">RECOMEÇAR!</button>
                     </div>
-                    <div class="col-2 d-none d-md-block"></div>
+                    <div class="col-2 d-none d-lg-block"></div>
                 </div>
                 <div class="col-2"></div>
             </div>
@@ -274,18 +281,19 @@
     <div class="position-relative">
         <div class="container">
             <div class="row" data-aos="fade-up" data-aos-duration="1500">
-                <div class="col-md-2 col-2"></div>
+                <div class="col-0 col-lg-2"></div>
 
-                <div class="col-md-4 col-3 d-flex justify-content-center align-items-center">
+                <div class="col-6 col-lg-4 d-flex justify-content-center align-items-center">
                     <img src="images/jogue.png" alt="Jogo" class="me-2 jogue">
                 </div>
 
-                <div class="col-md-4  col-6 d-flex flex-column justify-content-center align-items-center">
-                    <p class="resistente col-md-8 col-12">Mostre o quão resistente você é na conquista do apê próprio!</p>
+                <div class="col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                    <p class="resistente col-lg-8 col-12">Mostre o quão resistente você é na conquista do apê próprio!
+                    </p>
                     <button class="btn btn-success custom-btn mt-3">COMEÇAR!</button>
                 </div>
 
-                <div class="col-md-2"></div>
+                <div class="col-0 col-lg-2"></div>
             </div>
         </div>
     </div>
@@ -299,46 +307,44 @@
                     </p>
                 </div>
 
-                <div class="col-12 d-flex">
-                    <div class="custom-video-container">
-                        <div class="video-wrapper">
-                            <img src="./images/vector.png" class="vector" />
-                            <div class="video-inner">
-                                <video muted controls loop>
-                                    <source src="./images/video.mp4" type="video/mp4">
-                                    Seu navegador não suporta vídeos HTML5.
-                                </video>
-                            </div>
+                <div class="col-12 col-lg-6 ps-0 ps-lg-5">
+                    <div class="video-wrapper">
+                        <img src="./images/vector.png" class="vector" />
+                        <div class="video-inner">
+                            <video muted controls loop>
+                                <source src="./images/video.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos HTML5.
+                            </video>
                         </div>
-                        <p class="chamada">Chamada ação 1</p>
                     </div>
-                    <div class="custom-video-container">
-                        <div class="video-wrapper">
-                            <img src="./images/vector.png" class="vector" />
-                            <div class="video-inner">
-                                <video muted controls loop>
-                                    <source src="./images/video.mp4" type="video/mp4">
-                                    Seu navegador não suporta vídeos HTML5.
-                                </video>
-                            </div>
+                    <p class="chamada">Chamada ação 1</p>
+                </div>
+                <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                    <div class="video-wrapper">
+                        <img src="./images/vector.png" class="vector" />
+                        <div class="video-inner">
+                            <video muted controls loop>
+                                <source src="./images/video.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos HTML5.
+                            </video>
                         </div>
-                        <p class="chamada">Chamada ação 2</p>
                     </div>
+                    <p class="chamada">Chamada ação 2</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container pb-5">
-        <div class="row justify-content-center align-items-center mt-2" style="position: relative; z-index: 1;"
+    <div class="container pb-0 pb-lg-5 p-0">
+        <div class="row justify-content-center align-items-center mt-2 p-0" style="position: relative; z-index: 1;"
             data-aos="fade-up" data-aos-duration="1500">
             <div class="row justify-content-center align-items-center mt-2" style="position: relative; z-index: 1;">
-                <div class="col-6 col-md-6 d-flex justify-content-end align-items-center">
-                    <img src="images/bottom.png" alt="Boneco React" class="img-fluid Boneco-React d-none d-md-block">
-                    <img src="images/bottom2.png" alt="Boneco React" class="img-fluid Boneco-React d-md-none d-block">
+                <div class="col-6 col-lg-6 d-flex justify-content-end align-items-center">
+                    <img src="images/bottom.png" alt="Boneco React" class="img-fluid Boneco-React d-none d-lg-block">
+                    <img src="images/bottom2.png" alt="Boneco React" class="img-fluid Boneco-React d-lg-none d-block">
                 </div>
-                <div class="col-6 col-md-6 d-flex justify-content-start align-self-end">
-                    <p class="react-description">
+                <div class="col-6 col-lg-6 d-flex justify-content-start align-self-end">
+                    <p class="react-description react-description-2">
                         A MRV foi pras ruas conversar com o povo pra saber o que as pessoas fariam para conquistar a
                         liderança e um apê da MRV. <strong>Dá o play!</strong>
                     </p>
@@ -346,7 +352,7 @@
             </div>
 
             <div class="row justify-content-center align-items-center" style="position: relative; z-index: 1;">
-                <div class="col-12 col-md-10 d-flex justify-content-center align-items-center mt-2">
+                <div class="col-12 col-lg-10 d-flex justify-content-center align-items-center mt-2">
                     <video muted controls loop class="video-item" id="video">
                         <source src="./images/video.mp4" type="video/mp4">
                         Seu navegador não suporta vídeos HTML5.
@@ -366,7 +372,7 @@
         <!-- Botão para voltar ao topo -->
         <div class="row">
             <div class="col-12">
-                <button class="circle-btn position-absolute d-none d-md-block"
+                <button class="circle-btn position-absolute d-none d-lg-block"
                     style="width: 50px; height: 50px; bottom: 350px; right: 200px;" onclick="scrollToTop()">
                     <i class="fas fa-chevron-up"></i>
                 </button>
@@ -413,7 +419,12 @@
 </body>
 
 <script>
-    AOS.init();
+    document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+        setTimeout(() => {
+            window.dispatchEvent(new Event('resize')); // Força um recheck no mobile
+        }, 500);
+    });
 
     function scrollToNextDiv() {
         const nextDiv = document.getElementById('section-custom');
@@ -423,10 +434,10 @@
     }
 
     function scrollToTop() {
-        const nextDiv = document.getElementById('video-item');
-        if (nextDiv) {
-            nextDiv.scrollIntoView({ behavior: 'smooth' });
-        }
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Faz o scroll ser suave
+        });
     }
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -452,27 +463,27 @@
             {
                 question: "Qual dessas opções é um benefício de um apê MRV?",
                 options: [
-                    "Piscina e churrasqueira.", // A
-                    "Paredão personalizado.",  // B
-                    "Quarto inspirado em novelas da Globo." // C
+                    "Piscina e churrasqueira", // A
+                    "Paredão personalizado",  // B
+                    "Quarto inspirado em novelas da Globo" // C
                 ],
                 correct: 0  // A resposta correta para a pergunta 1 é A (índice 0)
             },
             {
                 question: "No BBB, o líder garante regalias exclusivas. Qual regalia um apê MRV oferece?",
                 options: [
-                    "Receber visitas especiais.",  // A
-                    "Ter uma suíte e área de lazer completa.",  // B
-                    "Escolher quem vai ao Paredão."  // C
+                    "Receber visitas especiais",  // A
+                    "Ter uma suíte e área de lazer completa",  // B
+                    "Escolher quem vai ao Paredão"  // C
                 ],
                 correct: 1  // A resposta correta para a pergunta 2 é B (índice 1)
             },
             {
                 question: "Qual das opções abaixo NÃO faz parte das características de um apê MRV?",
                 options: [
-                    "Lazer completo.",  // A
-                    "Varanda com churrasqueira.",  // B
-                    "Localização no exterior."  // C
+                    "Lazer completo",  // A
+                    "Varanda com churrasqueira",  // B
+                    "Localização no exterior"  // C
                 ],
                 correct: 2  // A resposta correta para a pergunta 3 é C (índice 2)
             },
@@ -553,59 +564,55 @@
         function handleAnswer(selectedIndex, button) {
             const currentQuestion = quizData[currentQuestionIndex];
 
+            // Desativar todos os botões antes de processar a resposta
+            const allButtons = optionsEl.querySelectorAll(".quiz-option");
+            allButtons.forEach(btn => {
+                btn.disabled = true;
+                btn.style.pointerEvents = "none"; // Impedir cliques adicionais
+            });
+
+            // Verificar se a resposta está correta
             if (selectedIndex === currentQuestion.correct) {
                 correctAnswersCount++;
-                button.style.backgroundColor = "#82EA5B";
-                button.style.color = "#ffffff";
+                button.style.backgroundColor = "#82EA5B"; // Cor de fundo para correta
+                button.style.color = "#ffffff"; // Cor do texto para correta
             } else {
-                button.style.backgroundColor = "#FF8B22";
-                button.style.color = "#ffffff";
+                button.style.backgroundColor = "#FF8B22"; // Cor de fundo para incorreta
+                button.style.color = "#ffffff"; // Cor do texto para incorreta
             }
-
-            const allButtons = optionsEl.querySelectorAll(".quiz-option");
-            allButtons.forEach(btn => btn.disabled = true);
 
             currentQuestionIndex++;
 
-            if (correctAnswersCount === 5) {
+            if (currentQuestionIndex < quizData.length) {
                 setTimeout(() => {
-                    questionEl.style.display = "none";
-                    optionsEl.style.setProperty("display", "none", "important");
-                    doorImageEl.style.display = "none";
-                    door.style.setProperty("display", "none", "important");
-                    victoryContainer.style.display = "block";
-                }, 1000);
+                    loadQuestion(); // Carregar a próxima pergunta
+
+                    // Reativar os botões após a próxima pergunta ser carregada
+                    allButtons.forEach(btn => {
+                        btn.disabled = false;
+                        btn.style.pointerEvents = "auto"; // Permitir cliques novamente
+                    });
+                }, 1000); // Timeout de 1 segundo antes de carregar a próxima pergunta
             } else {
-                if (currentQuestionIndex < quizData.length) {
-                    setTimeout(() => {
-                        loadQuestion();
-                    }, 1000);
-                }
-            }
-
-
-
-            if ((currentQuestionIndex === quizData.length)) {
-                if (correctAnswersCount >= 5) {
-                    setTimeout(() => {
+                // Checar se ganhou ou perdeu após a última pergunta
+                setTimeout(() => {
+                    if (correctAnswersCount >= 5) {
                         questionEl.style.display = "none";
                         optionsEl.style.setProperty("display", "none", "important");
                         doorImageEl.style.display = "none";
                         door.style.setProperty("display", "none", "important");
                         victoryContainer.style.display = "block";
-                    }, 1000);
-                } else {
-                    setTimeout(() => {
+                    } else {
                         questionEl.style.display = "none";
                         optionsEl.style.setProperty("display", "none", "important");
                         doorImageEl.style.setProperty("display", "none", "important");
                         door.style.setProperty("display", "none", "important");
                         lossContainer.style.display = "block";
-                    }, 1000);
-                }
+                    }
+                }, 1000); // Timeout de 1 segundo para exibir o resultado final
             }
 
-            updateDoorImage();
+            updateDoorImage(); // Atualizar a imagem da porta com base nas respostas corretas
         }
 
         function updateDoorImage() {
@@ -628,8 +635,6 @@
         }
 
         function restartQuiz() {
-            console.log("Reiniciando o quiz...");
-
             // Resetar as variáveis globais
             currentQuestionIndex = 0;
             correctAnswersCount = 0;
