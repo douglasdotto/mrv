@@ -592,6 +592,7 @@
             if (correctAnswersCount === 5) {
                 setTimeout(() => {
                     quizContainer.style.display = "none"; // Oculta o quiz
+                    doorImageEl.style.display = "none"; // Oculta o quiz
                     victoryContainer.style.display = "block"; // Mostra a tela de sucesso
                 }, 1000);
                 return; // Para evitar que continue para a próxima pergunta
@@ -602,9 +603,11 @@
                 setTimeout(() => {
                     if (correctAnswersCount >= 5) {
                         quizContainer.style.display = "none";
+                        doorImageEl.style.display = "none";
                         victoryContainer.style.display = "block";
                     } else {
                         quizContainer.style.display = "none";
+                        doorImageEl.style.display = "none"; 
                         lossContainer.style.display = "block";
                     }
                 }, 1000);
