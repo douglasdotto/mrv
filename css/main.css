@@ -193,7 +193,7 @@ body {
 }
 
 .textocard-image {
-    max-width: 475px;
+    max-width: 370px;
     width: 100%;
     height: auto;
 }
@@ -203,7 +203,6 @@ body {
     font-size: 17px;
     font-weight: 400;
     line-height: 22.25px;
-    margin-top: 20px;
     text-align: center;
 }
 
@@ -984,4 +983,18 @@ footer .btn:hover {
     .quiz-options .quiz-option:hover {
         border: 3px solid #07b56d !important
     }
+
+    .img-cel{
+        margin-top: -40px;
+    }
+
+    .img-cel1{
+        margin-bottom: 18px;
+    }
+
+    .img-cel2{
+        margin-bottom: 18px;
+    }
+
+
 }
