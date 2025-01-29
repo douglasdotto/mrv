@@ -26,12 +26,27 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Averta-Black';
+    src: url('../fonts/averta-Black.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta-ExtraBold';
+    src: url('../fonts/averta-ExtraBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --gshow-primary: #FF6700;
     --special-ad: #ffaa00;
     --text-primary: #333333;
     --confirmation-btn: #3AB7EA;
     --secondary: #FFFFFF;
+    --verde: #004D2E;
 }
 
 .special-ad {
@@ -51,21 +66,21 @@
 
 
 ::-webkit-scrollbar {
-    width: 3px;
+    width: 1px;
 }
 
 
 /* Track */
 
 ::-webkit-scrollbar-track {
-    background: var(--special-ad);
+    background: var(--verde);
 }
 
 
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: var(--gshow-primary);
+    background: var(--verde);
 }
 
 
@@ -196,7 +211,7 @@ body {
 .custom-btn {
     font-family: "Averta-Regular";
     margin-top: 20px;
-    width: 200px;
+    width: 228px;
     background: linear-gradient(80.85deg, #FF8B22 3.17%, #FFB719 91.16%);
     border: none;
     border-radius: 10px;
@@ -286,8 +301,8 @@ footer .btn:hover {
 /* Container para os ícones */
 .icon-container {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: white;
     border-radius: 50%;
     display: flex;
@@ -305,8 +320,8 @@ footer .btn:hover {
 
 /* Ajustando as imagens dentro dos ícones */
 .icon-container img {
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 50%;
+    max-height: 50%;
 }
 
 .video-item {
@@ -335,9 +350,16 @@ footer .btn:hover {
 
 .Conquiste-title {
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 900;
     color: #82EA5B;
     margin-bottom: 10px;
+    font-family: "averta-Black";
+}
+#door-image-desktop {
+    width: 100%; /* Ocupará todo o espaço do container */
+    height: 100%;
+    object-fit: cover; /* Redimensiona sem distorcer */
+    max-width: none; /* Evita que a imagem fique limitada */
 }
 
 /* Descrição */
@@ -348,6 +370,7 @@ footer .btn:hover {
     line-height: 22.25px;
     text-align: left;
     align-self: end;
+    margin-left: 30px;
 }
 
 .react-description-2 {
@@ -374,6 +397,11 @@ footer .btn:hover {
     border: none;
     cursor: pointer;
     transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.ape{
+    font-family: "Averta-ExtraBold";
+    font-weight: 900;
 }
 
 .button-custom-resistente:hover {
@@ -433,7 +461,6 @@ footer .btn:hover {
 }
 
 .quiz-options .quiz-option {
-    font-family: "Averta-Regular";
     width: 92%;
     background-color: white;
     color: #006B3F;
@@ -448,15 +475,15 @@ footer .btn:hover {
     transition: all 0.3s ease;
 }
 
-/*.quiz-options .quiz-option:hover {
-    border: 5px solid #82EA5B;
-}*/
+.quiz-options .quiz-option:hover {
+    border: 4px solid #07b56d;
+}
 
 .counter {
     background-color: #006b3f;
-    padding: 0px 15px 3.5px 15px;
+    padding: 6px 15px 6px 15px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Contêiner da mensagem de vitória e derrota */
@@ -601,6 +628,7 @@ footer .btn:hover {
 }
 
 .mrvnobbbgreen {
+    font-family: "Averta-Black";
     color: #82EA5B;
 }
 
@@ -817,7 +845,6 @@ footer .btn:hover {
     }
 
     .quiz-options .quiz-option {
-        font-family: "Averta-Regular";
         width: 100% !important;
         text-align: center !important;
         font-size: 14px !important;
@@ -948,5 +975,13 @@ footer .btn:hover {
 
     .vector {
         width: 125px !important;
+    }
+
+    .counter {
+        padding: 0px 15px 3.5px 15px !important
+    }
+
+    .quiz-options .quiz-option:hover {
+        border: 3px solid #07b56d !important
     }
 }
