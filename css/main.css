@@ -66,7 +66,7 @@
 
 
 ::-webkit-scrollbar {
-    width: 1px;
+    width: 10px;
 }
 
 
@@ -80,7 +80,7 @@
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: var(--verde);
+    background: var(--gshow-primary);
 }
 
 
@@ -97,9 +97,7 @@ html {
 }
 
 body {
-    background-color: #004D2E;
-    background: url('../images/bg-verde.png') no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(45deg, #006B3F 0%, #079D56 100%);
     color: #fff;
 }
 
@@ -255,8 +253,6 @@ body {
 }
 
 footer {
-    background: url('../images/bg-verde.png') no-repeat center center fixed;
-    background-size: cover;
     color: #fff;
 }
 
@@ -354,11 +350,16 @@ footer .btn:hover {
     margin-bottom: 10px;
     font-family: "averta-Black";
 }
+
 #door-image-desktop {
-    width: 100%; /* Ocupará todo o espaço do container */
+    width: 100%;
+    /* Ocupará todo o espaço do container */
     height: 100%;
-    object-fit: cover; /* Redimensiona sem distorcer */
-    max-width: none; /* Evita que a imagem fique limitada */
+    object-fit: cover;
+    /* Redimensiona sem distorcer */
+    max-width: none;
+    margin-top: 30px;
+    /* Evita que a imagem fique limitada */
 }
 
 /* Descrição */
@@ -398,7 +399,7 @@ footer .btn:hover {
     transition: opacity 0.3s ease, transform 0.2s ease;
 }
 
-.ape{
+.ape {
     font-family: "Averta-ExtraBold";
     font-weight: 900;
 }
@@ -480,9 +481,25 @@ footer .btn:hover {
 
 .counter {
     background-color: #006b3f;
-    padding: 6px 15px 6px 15px;
+    padding: 1px 15px 2px 15px;
+    margin-right: 10px;
     border-radius: 5px;
     font-size: 18px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    /* Garante que o tamanho se ajuste ao conteúdo */
+    text-align: center;
+    min-width: 40px;
+    /* Para garantir que o número tenha um tamanho fixo */
+}
+
+.question-container {
+    display: flex;
+    align-items: center;
+    /* Alinha verticalmente */
+    gap: 10px;
+    /* Dá um espaçamento entre o número e o texto */
 }
 
 /* Contêiner da mensagem de vitória e derrota */
@@ -619,11 +636,15 @@ footer .btn:hover {
 }
 
 .mrvnobbb {
-    font-family: "Averta-Regular";
+    font-family: "Averta-Black";
     font-size: 36px;
     font-weight: 900;
     line-height: 44.5px;
     text-align: center;
+}
+
+.extrabold {
+    font-family: "Averta-Black";
 }
 
 .mrvnobbbgreen {
@@ -633,35 +654,50 @@ footer .btn:hover {
 
 .video-wrapper {
     position: relative;
-    width: 550px;
-    height: 325px;
+    width: 600px;
+    height: 350px;
     border-radius: 20px;
-    overflow: hidden;
-    transform: rotateX(3deg) rotateY(16deg) rotateZ(-2deg);
-    perspective: 450px;
     margin: auto;
-    -webkit-perspective: 450px;
 }
 
 .vector {
     position: absolute;
-    bottom: 35px;
-    left: 35px;
+    bottom: 30px;
+    left: 15%;
+    z-index: -99;
 }
 
 .video-inner {
+    position: relative;
     border-radius: 20px;
-    transform: rotateX(3deg) rotateY(16deg) rotateZ(-2deg);
-    transform-origin: -40% 100% 0px;
-    overflow: hidden;
-    margin-left: 75px;
+    /* transform: rotateX(3deg) rotateY(16deg) rotateZ(-2deg);
+    transform-origin: -40% 100% 0px; */
+    margin-left: 22%;
 }
 
-.video-inner video {
-    width: 100%;
+.video-inner img {
+    width: 330px;
     height: 100%;
     object-fit: cover;
-    /* Ajusta o vídeo para cobrir toda a área */
+}
+
+.video-inner .play {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 135px;
+    top: 135px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.video-inner .play:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.modal-content {
+    min-height: 150px;
 }
 
 .chamada {
@@ -690,6 +726,21 @@ footer .btn:hover {
     right: 10px;
 }
 
+.modal-content,
+.modal-body {
+    background-color: #000;
+    min-height: 350px;
+    border-radius: 25px !important;
+}
+
+.modal-body video {
+    border-radius: 25px !important;
+}
+
+.clappr-player {
+    width: 100% !important;
+    border-radius: 25px !important;
+}
 
 @media (max-width: 992px) {
     .img-triangulo-esquerdo {
@@ -712,7 +763,7 @@ footer .btn:hover {
 
     /* Aumenta a largura da imagem */
     .textocard-image {
-        margin-top: -30px;
+        margin-top: -17.5px;
         max-width: 300px !important;
         height: auto;
     }
@@ -854,6 +905,7 @@ footer .btn:hover {
     .porta {
         width: 350px !important;
         max-height: 300px !important;
+        margin-top: -30px !important;
     }
 
     .jogue {
@@ -969,11 +1021,12 @@ footer .btn:hover {
     }
 
     .video-inner {
-        margin-left: 50px !important;
+        margin-left: 30px !important;
     }
 
     .vector {
-        width: 125px !important;
+        width: 200px !important;
+        left: 10px !important;
     }
 
     .counter {
@@ -984,15 +1037,15 @@ footer .btn:hover {
         border: 3px solid #07b56d !important
     }
 
-    .img-cel{
+    .img-cel {
         margin-top: -40px;
     }
 
-    .img-cel1{
+    .img-cel1 {
         margin-bottom: 18px;
     }
 
-    .img-cel2{
+    .img-cel2 {
         margin-bottom: 18px;
     }
 

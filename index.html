@@ -122,23 +122,28 @@
                     <div class="row justify-content-center m-600">
                         <div class="col-12 img-cel">
                             <img src="images/seja.png" alt="Texto do card"
-                                class="img-fluid textocard-image mb-0 mb-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                                class="img-fluid textocard-image mb-0 mb-lg-2" data-aos="fade-up"
+                                data-aos-duration="1000">
                         </div>
                         <div class="col-12 img-cel1">
                             <img src="images/piscina.png" alt="Texto do card"
-                                class="img-fluid textocard-image mb-0 mb-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                                class="img-fluid textocard-image mb-0 mb-lg-2" data-aos="fade-up"
+                                data-aos-duration="1000">
                         </div>
                         <div class="col-12 img-cel2">
                             <img src="images/lazer.png" alt="Texto do card"
-                                class="img-fluid textocard-image mb-0 mb-lg-3" data-aos="fade-up" data-aos-duration="1200">
+                                class="img-fluid textocard-image mb-0 mb-lg-2" data-aos="fade-up"
+                                data-aos-duration="1200">
                         </div>
                         <div class="col-12">
                             <img src="images/parcela.png" alt="Texto do card"
-                                class="img-fluid textocard-image mb-0 mb-lg-3" data-aos="fade-up" data-aos-duration="1400">
+                                class="img-fluid textocard-image mb-0 mb-lg-2" data-aos="fade-up"
+                                data-aos-duration="1400">
                         </div>
                         <div class="col-12">
                             <img src="images/apeMrv.png" alt="Texto do card"
-                                class="img-fluid textocard-image mb-0 mb-lg-3" data-aos="fade-up" data-aos-duration="1600">
+                                class="img-fluid textocard-image mb-0 mb-lg-5" data-aos="fade-up"
+                                data-aos-duration="1600">
                         </div>
 
                         <div class="mx-auto col-12">
@@ -149,7 +154,7 @@
                                 com condições facilitadas e desconto na primeira parcela.
                             </p>
                         </div>
-                        <button class="btn btn-success custom-btn"
+                        <button class="btn btn-success custom-btn" data-aos="fade-up" data-aos-duration="2000"
                             onclick="window.location.href='https://www.mrvnobbb.com.br/home';">SIMULE AGORA!</button>
                     </div>
                 </div>
@@ -327,10 +332,8 @@
                     <div class="video-wrapper">
                         <img src="./images/vector.png" class="vector" />
                         <div class="video-inner">
-                            <video muted controls loop>
-                                <source src="./images/video.mp4" type="video/mp4">
-                                Seu navegador não suporta vídeos HTML5.
-                            </video>
+                            <img src="images/video1.png" class="img-fluid">
+                            <img src="images/play.png" class="img-fluid play" data-id-video="1">
                         </div>
                     </div>
                     <p class="chamada">Chamada ação 1</p>
@@ -339,10 +342,8 @@
                     <div class="video-wrapper">
                         <img src="./images/vector.png" class="vector" />
                         <div class="video-inner">
-                            <video muted controls loop>
-                                <source src="./images/video.mp4" type="video/mp4">
-                                Seu navegador não suporta vídeos HTML5.
-                            </video>
+                            <img src="images/video2.png" class="img-fluid">
+                            <img src="images/play.png" class="img-fluid play" data-id-video="2">
                         </div>
                     </div>
                     <p class="chamada">Chamada ação 2</p>
@@ -362,7 +363,7 @@
                 <div class="col-6 col-lg-6 d-flex justify-content-start align-self-end">
                     <p class="react-description react-description-2">
                         A MRV foi pras ruas conversar com o povo pra saber o que as pessoas fariam para conquistar a
-                        liderança e um apê da MRV. <span class="fw-bold">Dá o play!</span>
+                        liderança e um apê da MRV. <span class="fw-bold extrabold">Dá o play!</span>
                     </p>
                 </div>
             </div>
@@ -378,7 +379,7 @@
         </div>
     </div>
 
-    <footer class="container-fluid bg-success text-white py-4 position-relative">
+    <footer class="container-fluid text-white py-4 position-relative">
         <!-- Imagens de fundo -->
         <img src="images/footerLadoEsquerdo.png" alt="Triângulo Esquerdo"
             class="position-absolute img-triangulo-esquerdo" style="bottom: 0; left: 0; max-width: 280px;">
@@ -425,12 +426,49 @@
         </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body position-relative p-0">
+                    <div class="w-100 h-100" id="main-video" data-aos="flip-left" data-aos-duration="1250">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://s.videos.globo.com/p2/j/api.min.js"></script>
 </body>
 
 <script>
+
+    $('#videoModal').on('hidden.bs.modal', function () {
+        $('#main-video').html("");
+    });
+
+    $('.play').on('click', function (event) {
+        event.preventDefault();
+
+        // Pega o ID do vídeo do botão clicado
+        var videoId = $(this).data('id-video');
+
+        // Configura o player de vídeo
+        new WM.Player({ videosIDs: videoId }).attachTo(document.getElementById('main-video'));
+
+        // Seleciona o modal e exibe
+        var videoModal = $('#videoModal');
+        if (videoModal.length) {
+            var modal = new bootstrap.Modal(videoModal[0]);
+            modal.show();
+        }
+    });
+
     document.addEventListener("DOMContentLoaded", function () {
         AOS.init({
             duration: 1500, // Tempo da animação
@@ -556,7 +594,11 @@
 
         function loadQuestion() {
             const currentQuestion = quizData[currentQuestionIndex];
-            questionEl.innerHTML = `<span><span class='counter'>${currentQuestionIndex + 1}/${quizData.length}</span> ${currentQuestion.question}</span>`;
+            questionEl.innerHTML = `
+                <div class="question-container">
+                    <span><span class='counter'>${currentQuestionIndex + 1}/${quizData.length}</span>${currentQuestion.question}</span>
+                </div>
+            `;
             optionsEl.innerHTML = "";
 
             const letters = ["A", "B", "C"]; // Letras das opções
@@ -601,6 +643,7 @@
             currentQuestionIndex++; // Agora incrementa corretamente
 
             // 🛠️ **Verificar vitória**
+            updateDoorImage(); // Atualizar a imagem da porta com base nas respostas corretas
             if (correctAnswersCount === 5) {
                 setTimeout(() => {
                     quizContainer.style.display = "none"; // Oculta o quiz
@@ -636,7 +679,6 @@
                 }, 1000);
             }
 
-            updateDoorImage(); // Atualizar a imagem da porta com base nas respostas corretas
         }
 
         function updateDoorImage() {
